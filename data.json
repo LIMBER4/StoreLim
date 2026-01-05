@@ -1,6 +1,6 @@
 {
     "config": {
-        "tasa_dolar": 9.98,
+        "tasa_dolar": 9.99,
         "celular": "59170000000",
         "costo_tiktok_unitario": 0.010333333333333333
     },
@@ -31,7 +31,7 @@
         },
         {
             "monedas": 17500,
-            "precio_bs": 1986
+            "precio_bs": 1988
         }
     ],
     "steam": [
