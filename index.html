@@ -4,99 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>StoreLim</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #050505;
-            --card: rgba(20, 20, 20, 0.85);
-            --accent: #00ff88; /* Verde Hacker */
-            --danger: #ff0055;
-            --text: #fff;
+            --bg: #090909;
+            --card: #141414;
+            --accent: #00ff88;
             --vip: #ffd700;
+            --text: #e0e0e0;
         }
 
         body {
             margin: 0; background: var(--bg); color: var(--text);
             font-family: 'Rajdhani', sans-serif; overflow-x: hidden;
+            padding-bottom: 50px;
         }
 
-        /* --- EFECTO MATRIX LLUVIA --- */
-        canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.2; }
+        /* MATRIX BG */
+        canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.15; }
 
-        /* --- UI --- */
-        .bar {
-            background: linear-gradient(90deg, var(--danger), #5500ff);
-            text-align: center; padding: 5px; font-weight: bold; font-size: 0.9rem;
-            position: sticky; top:0; z-index: 100;
-        }
-
-        header { padding: 20px; text-align: center; backdrop-filter: blur(5px); }
-        .logo { font-size: 2.5rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        /* HEADER */
+        header { padding: 20px; text-align: center; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #222; }
+        .logo { font-size: 2.2rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
         .logo span { color: var(--accent); }
 
-        /* PESTAÑAS */
+        /* TABS */
         .tabs { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
         .tab {
-            padding: 8px 20px; border: 1px solid #333; background: black; color: #888;
-            border-radius: 4px; cursor: pointer; text-transform: uppercase; font-weight: bold;
+            padding: 8px 16px; background: #222; color: #888; border-radius: 20px;
+            cursor: pointer; font-weight: bold; border: 1px solid #333; transition: 0.3s;
         }
-        .tab.active { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 10px rgba(0,255,136,0.2); }
+        .tab.active { background: var(--accent); color: black; border-color: var(--accent); box-shadow: 0 0 15px rgba(0,255,136,0.3); }
 
-        /* FILTROS */
-        .filters { display: flex; gap: 10px; overflow-x: auto; padding: 10px 20px; justify-content: center; }
-        .filter-btn {
-            background: #222; border: none; color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem;
-        }
-        
         /* GRID */
-        .container { max-width: 1200px; margin: 0 auto; padding: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
-        .section { display: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
+        .section { display: none; animation: fadeIn 0.5s; }
         .section.active { display: block; }
+        @keyframes fadeIn { from {opacity:0; transform:translateY(10px);} to {opacity:1; transform:translateY(0);} }
 
-        /* CARDS */
+        /* CARD JUEGO */
         .card {
-            background: var(--card); border: 1px solid #333; border-radius: 8px; overflow: hidden;
+            background: var(--card); border: 1px solid #2a2a2a; border-radius: 10px; overflow: hidden;
             position: relative; transition: transform 0.2s;
         }
         .card:active { transform: scale(0.98); }
         .card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
 
+        /* FAVORITO */
         .fav-btn {
-            position: absolute; top: 5px; right: 5px; font-size: 1.5rem; 
-            filter: drop-shadow(0 0 3px black); cursor: pointer; z-index: 10;
+            position: absolute; top: 5px; right: 5px; font-size: 1.6rem; 
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.8)); cursor: pointer; z-index: 10;
+            transition: transform 0.2s;
         }
+        .fav-btn:active { transform: scale(1.3); }
 
+        /* ETIQUETAS */
         .badges { position: absolute; top: 5px; left: 5px; display: flex; flex-direction: column; gap: 2px; }
-        .badge { padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; color: black; }
-        .b-vip { background: var(--vip); }
-        .b-off { background: var(--danger); color: white; }
+        .badge { padding: 3px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; color: black; }
+        .b-vip { background: var(--vip); box-shadow: 0 0 10px rgba(255, 215, 0, 0.4); }
+        .b-off { background: #ff0055; color: white; }
 
-        .info { padding: 10px; text-align: center; }
-        .title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.9rem; margin-bottom: 5px; }
+        /* INFO & PRECIOS */
+        .info { padding: 12px; text-align: center; }
+        .title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.95rem; margin-bottom: 8px; font-weight: bold; }
         
-        .prices { display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-bottom: 8px; }
-        .p-old { color: #777; font-size: 0.8rem; text-decoration: line-through; }
-        .p-new { color: var(--accent); font-size: 1.2rem; font-weight: 800; }
+        .usd-row { font-size: 0.75rem; margin-bottom: 4px; color: #777; font-weight: bold; }
+        .usd-old { text-decoration: line-through; margin-right: 5px; }
+        .usd-new { color: #ff0055; }
+        
+        .bs-price { font-size: 1.3rem; font-weight: 800; color: var(--accent); text-shadow: 0 0 10px rgba(0,255,136,0.2); margin-bottom: 10px; }
 
         .btn {
-            display: block; width: 100%; padding: 8px 0; background: var(--accent); color: black;
-            text-decoration: none; font-weight: bold; font-size: 0.9rem; border-radius: 4px;
+            display: block; width: 100%; padding: 10px 0; background: #fff; color: black;
+            text-decoration: none; font-weight: 800; font-size: 0.9rem; border-radius: 6px;
         }
+        .btn:hover { background: var(--accent); }
         .btn-tk { background: linear-gradient(45deg, #ff0050, #00f2ea); color: white; border: none; }
 
-        /* TIKTOK UI */
-        .calc { background: #111; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 20px; border: 1px solid #333; }
-        .calc input { background: black; border: 1px solid #444; color: white; padding: 10px; font-size: 1.2rem; width: 100px; text-align: center; }
-        
-        footer { text-align: center; padding: 30px; color: #555; font-size: 0.8rem; }
+        /* TIKTOK */
+        .calc { background: #1a1a1a; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 25px; border: 1px solid #333; }
+        .calc input { background: black; border: 1px solid #444; color: white; padding: 10px; font-size: 1.2rem; width: 120px; text-align: center; border-radius: 8px; }
+
+        /* FOOTER CONFIANZA */
+        .trust-footer {
+            margin-top: 40px; padding: 20px; border-top: 1px solid #333;
+            background: #0d0d0d; text-align: center; font-size: 0.85rem; color: #888;
+        }
+        .trust-box {
+            background: rgba(255, 200, 0, 0.05); border: 1px solid rgba(255, 200, 0, 0.2);
+            padding: 15px; border-radius: 8px; max-width: 600px; margin: 0 auto 10px auto;
+        }
     </style>
 </head>
 <body>
 
     <canvas id="matrix"></canvas>
-
-    <div id="top-msg" class="bar">Cargando...</div>
 
     <header>
         <h1 class="logo">Store<span>Lim</span></h1>
@@ -108,14 +111,12 @@
     </header>
 
     <div class="container">
-        
         <div id="steam" class="section active">
-            <input type="text" id="search" placeholder="🔍 Buscar juego..." style="width:100%; padding:12px; background:#111; border:1px solid #444; color:white; margin-bottom:10px; box-sizing:border-box;">
+            <input type="text" id="search" placeholder="🔍 Buscar juego..." style="width:100%; padding:15px; background:#1a1a1a; border:1px solid #333; color:white; border-radius:8px; margin-bottom:15px; box-sizing:border-box; font-size:1rem;">
             
-            <div class="filters">
-                <button class="filter-btn" onclick="filtrar('todo')">Todos</button>
-                <button class="filter-btn" onclick="filtrar('desc')">Mayor Descuento %</button>
-                <button class="filter-btn" onclick="filtrar('vip')">Solo VIPs 👑</button>
+            <div style="text-align:center; margin-bottom:15px;">
+                <button class="tab" style="font-size:0.8rem; padding:5px 12px;" onclick="filtrar('todo')">Todos</button>
+                <button class="tab" style="font-size:0.8rem; padding:5px 12px;" onclick="filtrar('vip')">Solo VIPs 👑</button>
             </div>
 
             <div id="grid-steam" class="grid"></div>
@@ -123,11 +124,11 @@
 
         <div id="tiktok" class="section">
             <div class="calc">
-                <h3>⚡ Calculadora</h3>
+                <h3 style="margin-top:0;">⚡ Calculadora Monedas</h3>
                 <input type="number" id="tk-in" placeholder="0">
-                <div style="color:#666; font-size:0.8rem; margin:5px;">Monedas</div>
-                <h2 id="tk-out" style="color:white;">0 Bs</h2>
-                <a id="tk-btn" href="#" class="btn btn-tk" style="display:none; max-width:200px; margin:10px auto;">PEDIR</a>
+                <div style="color:#666; font-size:0.8rem; margin:8px;">Ingresa cantidad</div>
+                <h2 id="tk-out" style="color:var(--accent); margin:5px 0 15px 0;">0 Bs</h2>
+                <a id="tk-btn" href="#" class="btn btn-tk" style="display:none; max-width:200px; margin:0 auto;">PEDIR</a>
             </div>
             <div id="grid-tk" class="grid"></div>
         </div>
@@ -136,10 +137,16 @@
             <h3 style="text-align:center; color:#666;">Tus Juegos Guardados</h3>
             <div id="grid-fav" class="grid"></div>
         </div>
-
     </div>
 
-    <footer>StoreLim • Bolivia</footer>
+    <footer class="trust-footer">
+        <div class="trust-box">
+            <strong style="color: #ffcc00;">⚠️ Información de Entrega</strong><br>
+            Para garantizar tu seguridad, utilizamos un proceso de carga mediante tarjeta virtual oficial.
+            <br>Este proceso es 100% seguro y legal, pero puede demorar entre <strong>1 a 4 horas</strong> en completarse.
+        </div>
+        <p>StoreLim © 2026 • Cochabamba, Bolivia 🇧🇴<br>Pagos vía QR Banco Unión / BCP</p>
+    </footer>
 
     <script>
         let DATA = {};
@@ -147,35 +154,22 @@
         let FAVS = JSON.parse(localStorage.getItem('favs')) || [];
 
         async function init() {
-            // Cargar datos
-            const r = await fetch('data.json');
-            DATA = await r.json();
-            JUEGOS = DATA.juegos;
-            
-            document.getElementById('top-msg').innerText = DATA.config.msg;
-            
-            renderJuegos(JUEGOS);
-            renderTikTok(DATA.tiktok);
-            renderFavs();
-            initMatrix(); // Efecto Lluvia
-            
-            // Calculadora
-            document.getElementById('tk-in').addEventListener('input', (e)=>{
-                const m = parseInt(e.target.value);
-                if(m>0){
-                    const p = Math.ceil(m * DATA.config.costo_tk * DATA.config.tasa * 1.10);
-                    document.getElementById('tk-out').innerText = p + " Bs";
-                    const btn = document.getElementById('tk-btn');
-                    btn.style.display = 'block';
-                    btn.href = `https://wa.me/${DATA.config.celular}?text=Personalizado: Quiero *${m} Monedas* TikTok (${p}Bs)`;
-                }
-            });
+            try {
+                const r = await fetch('data.json');
+                DATA = await r.json();
+                JUEGOS = DATA.juegos;
+                
+                renderJuegos(JUEGOS);
+                renderTikTok(DATA.tiktok);
+                renderFavs();
+                initMatrix();
+                setupCalc();
+            } catch(e) { console.log("Error cargando:", e); }
 
             // Buscador
             document.getElementById('search').addEventListener('keyup', (e)=>{
                 const t = e.target.value.toLowerCase();
-                const filtrados = JUEGOS.filter(j => j.nombre.toLowerCase().includes(t));
-                renderJuegos(filtrados);
+                renderJuegos(JUEGOS.filter(j => j.nombre.toLowerCase().includes(t)));
             });
         }
 
@@ -189,15 +183,15 @@
                 const vipBadge = j.es_vip ? '<div class="badge b-vip">👑 VIP</div>' : '';
                 const offBadge = j.descuento > 0 ? `<div class="badge b-off">-${j.descuento}%</div>` : '';
                 
-                // Lógica Precio: (Original Tachado) (Nuevo Grande)
-                let priceHtml = '';
+                // LÓGICA DE PRECIOS PEDIDA: (USD OLD) (USD NEW)
+                let usdHtml = '';
                 if(j.descuento > 0) {
-                    priceHtml = `<span class="p-old">${j.precio_antes_bs} Bs</span> <span class="p-new">${j.precio_bs} Bs</span>`;
+                    usdHtml = `<span class="usd-old">$${j.usd_orig}</span> <span class="usd-new">$${j.usd_now}</span>`;
                 } else {
-                    priceHtml = `<span class="p-new">${j.precio_bs} Bs</span>`;
+                    usdHtml = `<span class="usd-row">$${j.usd_now} USD</span>`;
                 }
 
-                const link = `https://wa.me/${DATA.config.celular}?text=Hola, quiero comprar *${j.nombre}*. Precio: ${j.precio_bs}Bs`;
+                const link = `https://wa.me/${DATA.config.celular}?text=Hola StoreLim, quiero *${j.nombre}*. Precio Web: ${j.precio_bs}Bs`;
 
                 box.innerHTML += `
                     <div class="card">
@@ -206,7 +200,8 @@
                         <img src="${j.imagen}" loading="lazy">
                         <div class="info">
                             <div class="title">${j.nombre}</div>
-                            <div class="prices">${priceHtml}</div>
+                            <div class="usd-row">${usdHtml}</div>
+                            <div class="bs-price">${j.precio_bs} Bs</div>
                             <a href="${link}" class="btn">COMPRAR</a>
                         </div>
                     </div>
@@ -217,30 +212,37 @@
         function renderTikTok(packs) {
             const box = document.getElementById('grid-tk');
             packs.forEach(p => {
-                const link = `https://wa.me/${DATA.config.celular}?text=Quiero Pack TikTok: *${p.monedas} Monedas*. Precio: ${p.precio_bs}Bs`;
+                const link = `https://wa.me/${DATA.config.celular}?text=Pack TikTok: *${p.monedas} Monedas* (${p.precio_bs}Bs)`;
                 box.innerHTML += `
                     <div class="card" style="padding:15px; text-align:center;">
                         <div style="font-size:2rem;">🪙</div>
-                        <h3>${p.monedas}</h3>
-                        <div class="p-new" style="color:#ff0055">${p.precio_bs} Bs</div>
-                        <a href="${link}" class="btn btn-tk">COMPRAR</a>
+                        <div style="font-size:1.2rem; font-weight:bold; margin-bottom:5px;">${p.monedas}</div>
+                        <div class="bs-price" style="color:#ff0055">${p.precio_bs} Bs</div>
+                        <a href="${link}" class="btn btn-tk">RECARGAR</a>
                     </div>
                 `;
             });
         }
 
         function renderFavs() {
-            const favGames = JUEGOS.filter(j => FAVS.includes(j.id));
-            if(favGames.length === 0) document.getElementById('grid-fav').innerHTML = "<p style='text-align:center; width:100%'>No tienes favoritos aún.</p>";
-            else renderJuegos(favGames, 'grid-fav');
+            const misFavs = JUEGOS.filter(j => FAVS.includes(j.id));
+            const div = document.getElementById('grid-fav');
+            if(misFavs.length === 0) div.innerHTML = "<p style='text-align:center; width:100%; color:#666;'>Toca el corazón 🤍 para guardar juegos.</p>";
+            else renderJuegos(misFavs, 'grid-fav');
         }
 
+        // FUNCIÓN GLOBAL PARA FAVORITOS
         window.toggleFav = (id) => {
-            if(FAVS.includes(id)) FAVS = FAVS.filter(i => i !== id);
-            else FAVS.push(id);
+            if(FAVS.includes(id)) {
+                FAVS = FAVS.filter(i => i !== id);
+            } else {
+                FAVS.push(id);
+            }
             localStorage.setItem('favs', JSON.stringify(FAVS));
-            renderJuegos(JUEGOS); // Re-render para actualizar corazon
-            renderFavs();
+            
+            // Actualizar vista actual sin recargar todo
+            renderJuegos(JUEGOS); // Refresca corazones en lista principal
+            renderFavs(); // Refresca la pestaña favoritos
         };
 
         window.setTab = (id) => {
@@ -251,35 +253,43 @@
         };
 
         window.filtrar = (tipo) => {
-            let res = [...JUEGOS];
-            if(tipo === 'desc') res.sort((a,b) => b.descuento - a.descuento);
-            if(tipo === 'vip') res = res.filter(j => j.es_vip);
-            renderJuegos(res);
+            if(tipo === 'todo') renderJuegos(JUEGOS);
+            if(tipo === 'vip') renderJuegos(JUEGOS.filter(j => j.es_vip));
         };
 
-        // --- EFECTO MATRIX (Canvas) ---
+        function setupCalc() {
+            document.getElementById('tk-in').addEventListener('input', (e)=>{
+                const m = parseInt(e.target.value);
+                if(m>0){
+                    const p = Math.ceil(m * DATA.config.costo_tk * DATA.config.tasa * 1.10);
+                    document.getElementById('tk-out').innerText = p + " Bs";
+                    const btn = document.getElementById('tk-btn');
+                    btn.style.display = 'block';
+                    btn.href = `https://wa.me/${DATA.config.celular}?text=Personalizado: *${m} Monedas* (${p}Bs)`;
+                }
+            });
+        }
+
         function initMatrix() {
             const c = document.getElementById("matrix");
             const ctx = c.getContext("2d");
             c.width = window.innerWidth; c.height = window.innerHeight;
-            const chars = "10"; // Binario simple
+            const chars = "10"; 
             const fontSize = 14;
             const columns = c.width / fontSize;
             const drops = Array(Math.floor(columns)).fill(1);
-            
             function draw() {
                 ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
                 ctx.fillRect(0, 0, c.width, c.height);
-                ctx.fillStyle = "#0F0"; // Color verde matrix
+                ctx.fillStyle = "#0F0";
                 ctx.font = fontSize + "px monospace";
                 for(let i=0; i<drops.length; i++) {
-                    const text = chars.charAt(Math.floor(Math.random()*chars.length));
-                    ctx.fillText(text, i*fontSize, drops[i]*fontSize);
+                    ctx.fillText(chars.charAt(Math.floor(Math.random()*chars.length)), i*fontSize, drops[i]*fontSize);
                     if(drops[i]*fontSize > c.height && Math.random() > 0.975) drops[i] = 0;
                     drops[i]++;
                 }
             }
-            setInterval(draw, 33);
+            setInterval(draw, 40);
         }
 
         init();
