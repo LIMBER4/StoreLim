@@ -3,439 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>StoreLim | Steam & TikTok</title>
+    <title>StoreLim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        /* --- 🎨 ESTILO AESTHETIC DARK --- */
         :root {
-            --bg: #0a0a0a;
-            --card: #161616;
-            --text: #e0e0e0;
-            --steam: #66c0f4;
-            --tiktok: #ff0050;
-            --tiktok-cyan: #00f2ea;
-            --accent: #ffffff;
+            --bg: #050505;
+            --card: rgba(20, 20, 20, 0.85);
+            --accent: #00ff88; /* Verde Hacker */
+            --danger: #ff0055;
+            --text: #fff;
+            --vip: #ffd700;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            -webkit-tap-highlight-color: transparent;
+            margin: 0; background: var(--bg); color: var(--text);
+            font-family: 'Rajdhani', sans-serif; overflow-x: hidden;
         }
 
-        /* EFECTO NIEVE/LLUVIA SUTIL */
-        .snow {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
-            background-image: url('https://raw.githubusercontent.com/s1mpson/-/master/snow.png');
-            animation: snow 20s linear infinite;
-            opacity: 0.3; /* Muy sutil */
-        }
-        @keyframes snow { 0% {background-position: 0 0;} 100% {background-position: 0 500px;} }
+        /* --- EFECTO MATRIX LLUVIA --- */
+        canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.2; }
 
-        /* HEADER & NAV */
-        header {
-            background: rgba(10, 10, 10, 0.85);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 15px 0;
-            border-bottom: 1px solid #222;
+        /* --- UI --- */
+        .bar {
+            background: linear-gradient(90deg, var(--danger), #5500ff);
+            text-align: center; padding: 5px; font-weight: bold; font-size: 0.9rem;
+            position: sticky; top:0; z-index: 100;
         }
 
-        .brand {
-            text-align: center;
-            font-size: 1.4rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-            color: var(--accent);
-        }
+        header { padding: 20px; text-align: center; backdrop-filter: blur(5px); }
+        .logo { font-size: 2.5rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .logo span { color: var(--accent); }
 
-        .nav-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding: 0 10px;
+        /* PESTAÑAS */
+        .tabs { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
+        .tab {
+            padding: 8px 20px; border: 1px solid #333; background: black; color: #888;
+            border-radius: 4px; cursor: pointer; text-transform: uppercase; font-weight: bold;
         }
+        .tab.active { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 10px rgba(0,255,136,0.2); }
 
-        .tab-btn {
-            background: transparent;
-            border: 1px solid #333;
-            color: #888;
-            padding: 8px 18px;
-            border-radius: 20px; /* Botones sutiles */
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
+        /* FILTROS */
+        .filters { display: flex; gap: 10px; overflow-x: auto; padding: 10px 20px; justify-content: center; }
+        .filter-btn {
+            background: #222; border: none; color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem;
         }
-
-        .tab-btn.active {
-            background: var(--text);
-            color: var(--bg);
-            border-color: var(--text);
-            font-weight: bold;
-            box-shadow: 0 0 10px rgba(255,255,255,0.2);
-        }
-
-        /* CONTENEDOR PRINCIPAL */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .section { display: none; animation: fadeIn 0.5s; }
+        
+        /* GRID */
+        .container { max-width: 1200px; margin: 0 auto; padding: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+        .section { display: none; }
         .section.active { display: block; }
-        @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
 
-        /* --- 🎮 ESTILO STEAM --- */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            gap: 15px;
-        }
-
+        /* CARDS */
         .card {
-            background: var(--card);
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid #222;
-            position: relative;
+            background: var(--card); border: 1px solid #333; border-radius: 8px; overflow: hidden;
+            position: relative; transition: transform 0.2s;
+        }
+        .card:active { transform: scale(0.98); }
+        .card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+
+        .fav-btn {
+            position: absolute; top: 5px; right: 5px; font-size: 1.5rem; 
+            filter: drop-shadow(0 0 3px black); cursor: pointer; z-index: 10;
         }
 
-        .card-img-wrap { position: relative; }
-        .card img { width: 100%; display: block; }
+        .badges { position: absolute; top: 5px; left: 5px; display: flex; flex-direction: column; gap: 2px; }
+        .badge { padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; color: black; }
+        .b-vip { background: var(--vip); }
+        .b-off { background: var(--danger); color: white; }
+
+        .info { padding: 10px; text-align: center; }
+        .title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.9rem; margin-bottom: 5px; }
         
-        .discount-badge {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: #ff0040;
-            color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-        }
+        .prices { display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-bottom: 8px; }
+        .p-old { color: #777; font-size: 0.8rem; text-decoration: line-through; }
+        .p-new { color: var(--accent); font-size: 1.2rem; font-weight: 800; }
 
-        .card-body { padding: 12px; text-align: center; }
+        .btn {
+            display: block; width: 100%; padding: 8px 0; background: var(--accent); color: black;
+            text-decoration: none; font-weight: bold; font-size: 0.9rem; border-radius: 4px;
+        }
+        .btn-tk { background: linear-gradient(45deg, #ff0050, #00f2ea); color: white; border: none; }
+
+        /* TIKTOK UI */
+        .calc { background: #111; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 20px; border: 1px solid #333; }
+        .calc input { background: black; border: 1px solid #444; color: white; padding: 10px; font-size: 1.2rem; width: 100px; text-align: center; }
         
-        .prices-usd {
-            font-size: 0.75rem;
-            color: #777;
-            margin-bottom: 4px;
-        }
-        .usd-old { text-decoration: line-through; opacity: 0.6; margin-right: 5px; }
-        .usd-new { color: var(--steam); font-weight: bold; }
-
-        .price-bs {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: var(--text);
-            margin: 5px 0 10px 0;
-        }
-
-        /* BOTONES DE COMPRA */
-        .btn-buy {
-            display: block;
-            width: 100%;
-            padding: 10px 0;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: 0.2s;
-        }
-
-        .btn-steam { background: #2a475e; color: white; } 
-        .btn-steam:active { background: #66c0f4; }
-
-        /* --- 🎵 ESTILO TIKTOK --- */
-        .tiktok-header {
-            text-align: center;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #111, #1a1a1a);
-            padding: 15px;
-            border-radius: 12px;
-            border: 1px solid #333;
-        }
-
-        .calculator {
-            margin-top: 20px;
-            padding: 15px;
-            background: #1a1a1a;
-            border-radius: 12px;
-            border: 1px solid #333;
-        }
-
-        .calc-input {
-            width: 90%;
-            background: #000;
-            border: 1px solid #444;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 1rem;
-            text-align: center;
-            outline: none;
-        }
-
-        .calc-result {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            color: var(--tiktok-cyan);
-            font-weight: bold;
-        }
-
-        .tk-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 10px;
-        }
-        
-        .tk-card {
-            background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .tk-icon { font-size: 1.5rem; margin-bottom: 5px; }
-        .tk-coins { font-weight: bold; font-size: 1.1rem; color: white; }
-        .tk-price { font-size: 1.2rem; color: var(--tiktok-cyan); margin: 8px 0; font-weight: 800; }
-        .btn-tiktok { 
-            background: linear-gradient(90deg, var(--tiktok), var(--tiktok-cyan)); 
-            color: black; border: none; 
-        }
-
-        /* --- 🚧 PRÓXIMAMENTE --- */
-        .coming-soon-card {
-            background: #111;
-            padding: 30px;
-            text-align: center;
-            border-radius: 12px;
-            border: 1px dashed #444;
-            color: #666;
-        }
-
-        /* --- ⚠️ AVISO LEGAL --- */
-        .delivery-note {
-            font-size: 0.7rem;
-            color: #888;
-            text-align: center;
-            padding: 15px;
-            border-top: 1px solid #222;
-            margin-top: 30px;
-        }
+        footer { text-align: center; padding: 30px; color: #555; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <div class="snow"></div>
+    <canvas id="matrix"></canvas>
+
+    <div id="top-msg" class="bar">Cargando...</div>
 
     <header>
-        <div class="brand">StoreLim</div>
-        <div class="nav-tabs">
-            <button class="tab-btn active" onclick="showTab('steam')">STEAM 🎮</button>
-            <button class="tab-btn" onclick="showTab('tiktok')">TIKTOK 🎵</button>
-            <button class="tab-btn" onclick="showTab('future')">EXTRA ✨</button>
+        <h1 class="logo">Store<span>Lim</span></h1>
+        <div class="tabs">
+            <div class="tab active" onclick="setTab('steam')">Juegos</div>
+            <div class="tab" onclick="setTab('tiktok')">TikTok</div>
+            <div class="tab" onclick="setTab('favs')">Favoritos ❤️</div>
         </div>
     </header>
 
     <div class="container">
         
         <div id="steam" class="section active">
-            <input type="text" id="steam-search" placeholder="🔍 Buscar juego..." 
-                   style="width:100%; padding:12px; background:#111; border:1px solid #333; color:white; border-radius:8px; margin-bottom:20px; box-sizing:border-box;">
+            <input type="text" id="search" placeholder="🔍 Buscar juego..." style="width:100%; padding:12px; background:#111; border:1px solid #444; color:white; margin-bottom:10px; box-sizing:border-box;">
             
-            <div id="steam-grid" class="grid">
-                <p style="text-align:center; width:100%; color:#666;">Cargando ofertas...</p>
+            <div class="filters">
+                <button class="filter-btn" onclick="filtrar('todo')">Todos</button>
+                <button class="filter-btn" onclick="filtrar('desc')">Mayor Descuento %</button>
+                <button class="filter-btn" onclick="filtrar('vip')">Solo VIPs 👑</button>
             </div>
+
+            <div id="grid-steam" class="grid"></div>
         </div>
 
         <div id="tiktok" class="section">
-            <div class="tiktok-header">
-                <h3>Recarga de Monedas</h3>
-                <p style="font-size:0.8rem; color:#aaa;">Sin comisiones ocultas • Entrega Segura</p>
-                
-                <div class="calculator">
-                    <p style="margin:0 0 10px 0; font-size:0.9rem;">¿Cuántas monedas quieres?</p>
-                    <input type="number" id="coin-input" class="calc-input" placeholder="Ej: 150">
-                    <div id="calc-output" class="calc-result">0 Bs.</div>
-                    <a id="btn-calc-buy" href="#" class="btn-buy btn-tiktok" style="margin-top:10px; display:none;">COMPRAR MONEDAS</a>
-                </div>
+            <div class="calc">
+                <h3>⚡ Calculadora</h3>
+                <input type="number" id="tk-in" placeholder="0">
+                <div style="color:#666; font-size:0.8rem; margin:5px;">Monedas</div>
+                <h2 id="tk-out" style="color:white;">0 Bs</h2>
+                <a id="tk-btn" href="#" class="btn btn-tk" style="display:none; max-width:200px; margin:10px auto;">PEDIR</a>
             </div>
-
-            <div id="tiktok-grid" class="tk-grid">
-                </div>
+            <div id="grid-tk" class="grid"></div>
         </div>
 
-        <div id="future" class="section">
-            <div class="coming-soon-card">
-                <h2>🚀 Próximamente</h2>
-                <p>Estamos trabajando para traerte recargas de:</p>
-                <div style="margin-top:20px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-                    <span style="padding:5px 10px; background:#222; border-radius:5px;">Free Fire 💎</span>
-                    <span style="padding:5px 10px; background:#222; border-radius:5px;">Netflix 🍿</span>
-                    <span style="padding:5px 10px; background:#222; border-radius:5px;">Spotify 🎧</span>
-                </div>
-            </div>
+        <div id="favs" class="section">
+            <h3 style="text-align:center; color:#666;">Tus Juegos Guardados</h3>
+            <div id="grid-fav" class="grid"></div>
         </div>
 
     </div>
 
-    <footer class="delivery-note">
-        ⚠️ <strong>Nota Importante:</strong> La entrega puede demorar entre 1 a 4 horas debido al proceso de carga seguro en tarjeta virtual. <br>
-        StoreLim - Cochabamba, Bolivia 🇧🇴
-    </footer>
+    <footer>StoreLim • Bolivia</footer>
 
     <script>
-        // CONFIGURACIÓN GLOBAL (Se actualizará sola)
-        let APP_DATA = {
-            tasa_dolar: 11.5, // Valor por defecto
-            celular: "59174355273" // CAMBIA ESTO
+        let DATA = {};
+        let JUEGOS = [];
+        let FAVS = JSON.parse(localStorage.getItem('favs')) || [];
+
+        async function init() {
+            // Cargar datos
+            const r = await fetch('data.json');
+            DATA = await r.json();
+            JUEGOS = DATA.juegos;
+            
+            document.getElementById('top-msg').innerText = DATA.config.msg;
+            
+            renderJuegos(JUEGOS);
+            renderTikTok(DATA.tiktok);
+            renderFavs();
+            initMatrix(); // Efecto Lluvia
+            
+            // Calculadora
+            document.getElementById('tk-in').addEventListener('input', (e)=>{
+                const m = parseInt(e.target.value);
+                if(m>0){
+                    const p = Math.ceil(m * DATA.config.costo_tk * DATA.config.tasa * 1.10);
+                    document.getElementById('tk-out').innerText = p + " Bs";
+                    const btn = document.getElementById('tk-btn');
+                    btn.style.display = 'block';
+                    btn.href = `https://wa.me/${DATA.config.celular}?text=Personalizado: Quiero *${m} Monedas* TikTok (${p}Bs)`;
+                }
+            });
+
+            // Buscador
+            document.getElementById('search').addEventListener('keyup', (e)=>{
+                const t = e.target.value.toLowerCase();
+                const filtrados = JUEGOS.filter(j => j.nombre.toLowerCase().includes(t));
+                renderJuegos(filtrados);
+            });
+        }
+
+        function renderJuegos(lista, containerId = 'grid-steam') {
+            const box = document.getElementById(containerId);
+            box.innerHTML = "";
+            
+            lista.forEach(j => {
+                const isFav = FAVS.includes(j.id);
+                const heart = isFav ? '❤️' : '🤍';
+                const vipBadge = j.es_vip ? '<div class="badge b-vip">👑 VIP</div>' : '';
+                const offBadge = j.descuento > 0 ? `<div class="badge b-off">-${j.descuento}%</div>` : '';
+                
+                // Lógica Precio: (Original Tachado) (Nuevo Grande)
+                let priceHtml = '';
+                if(j.descuento > 0) {
+                    priceHtml = `<span class="p-old">${j.precio_antes_bs} Bs</span> <span class="p-new">${j.precio_bs} Bs</span>`;
+                } else {
+                    priceHtml = `<span class="p-new">${j.precio_bs} Bs</span>`;
+                }
+
+                const link = `https://wa.me/${DATA.config.celular}?text=Hola, quiero comprar *${j.nombre}*. Precio: ${j.precio_bs}Bs`;
+
+                box.innerHTML += `
+                    <div class="card">
+                        <div class="fav-btn" onclick="toggleFav(${j.id})">${heart}</div>
+                        <div class="badges">${vipBadge}${offBadge}</div>
+                        <img src="${j.imagen}" loading="lazy">
+                        <div class="info">
+                            <div class="title">${j.nombre}</div>
+                            <div class="prices">${priceHtml}</div>
+                            <a href="${link}" class="btn">COMPRAR</a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function renderTikTok(packs) {
+            const box = document.getElementById('grid-tk');
+            packs.forEach(p => {
+                const link = `https://wa.me/${DATA.config.celular}?text=Quiero Pack TikTok: *${p.monedas} Monedas*. Precio: ${p.precio_bs}Bs`;
+                box.innerHTML += `
+                    <div class="card" style="padding:15px; text-align:center;">
+                        <div style="font-size:2rem;">🪙</div>
+                        <h3>${p.monedas}</h3>
+                        <div class="p-new" style="color:#ff0055">${p.precio_bs} Bs</div>
+                        <a href="${link}" class="btn btn-tk">COMPRAR</a>
+                    </div>
+                `;
+            });
+        }
+
+        function renderFavs() {
+            const favGames = JUEGOS.filter(j => FAVS.includes(j.id));
+            if(favGames.length === 0) document.getElementById('grid-fav').innerHTML = "<p style='text-align:center; width:100%'>No tienes favoritos aún.</p>";
+            else renderJuegos(favGames, 'grid-fav');
+        }
+
+        window.toggleFav = (id) => {
+            if(FAVS.includes(id)) FAVS = FAVS.filter(i => i !== id);
+            else FAVS.push(id);
+            localStorage.setItem('favs', JSON.stringify(FAVS));
+            renderJuegos(JUEGOS); // Re-render para actualizar corazon
+            renderFavs();
         };
 
-        // 1. CARGAR DATOS DEL JSON
-        async function initStore() {
-            try {
-                const response = await fetch('data.json'); // Archivo unificado
-                const data = await response.json();
-                
-                APP_DATA.tasa_dolar = data.config.tasa_dolar;
-                APP_DATA.celular = data.config.celular;
-
-                renderSteam(data.steam);
-                renderTikTok(data.tiktok_packs);
-                initCalculator(data.config.costo_tiktok_unitario); // Nuevo: Precio unitario base
-
-            } catch (error) {
-                console.error("Error cargando datos", error);
-            }
-        }
-
-        // 2. RENDER STEAM
-        function renderSteam(games) {
-            const container = document.getElementById('steam-grid');
-            container.innerHTML = '';
-
-            games.forEach(g => {
-                // Lógica de precios
-                let priceHtml = '';
-                let badgeHtml = '';
-                
-                if (g.descuento > 0) {
-                    priceHtml = `
-                        <div class="prices-usd">
-                            <span class="usd-old">$${g.precio_orig_usd}</span>
-                            <span class="usd-new">$${g.precio_final_usd}</span>
-                        </div>
-                    `;
-                    badgeHtml = `<div class="discount-badge">-${g.descuento}%</div>`;
-                } else {
-                    priceHtml = `<div class="prices-usd"><span class="usd-new">$${g.precio_final_usd}</span></div>`;
-                }
-
-                const msg = `Hola StoreLim, quiero comprar el juego STEAM: *${g.nombre}*. Precio Web: ${g.precio_bs}Bs.`;
-                const link = `https://wa.me/${APP_DATA.celular}?text=${encodeURIComponent(msg)}`;
-
-                container.innerHTML += `
-                    <div class="card">
-                        <div class="card-img-wrap">
-                            <img src="${g.imagen}" loading="lazy">
-                            ${badgeHtml}
-                        </div>
-                        <div class="card-body">
-                            ${priceHtml}
-                            <div class="price-bs">${g.precio_bs} Bs</div>
-                            <a href="${link}" class="btn-buy btn-steam">COMPRAR JUEGO</a>
-                        </div>
-                    </div>
-                `;
-            });
-
-            // Buscador simple
-            document.getElementById('steam-search').addEventListener('keyup', (e) => {
-                const term = e.target.value.toLowerCase();
-                const cards = container.getElementsByClassName('card');
-                Array.from(cards).forEach(card => {
-                    const text = card.innerText.toLowerCase();
-                    card.style.display = text.includes(term) ? 'block' : 'none';
-                });
-            });
-        }
-
-        // 3. RENDER TIKTOK
-        function renderTikTok(packs) {
-            const container = document.getElementById('tiktok-grid');
-            container.innerHTML = '';
-
-            packs.forEach(p => {
-                const msg = `Hola, quiero el Pack TikTok de *${p.monedas} Monedas* por ${p.precio_bs}Bs.`;
-                const link = `https://wa.me/${APP_DATA.celular}?text=${encodeURIComponent(msg)}`;
-
-                container.innerHTML += `
-                    <div class="tk-card">
-                        <div class="tk-icon">🪙</div>
-                        <div class="tk-coins">${p.monedas} Monedas</div>
-                        <div class="tk-price">${p.precio_bs} Bs</div>
-                        <a href="${link}" class="btn-buy btn-tiktok">COMPRAR MONEDAS</a>
-                    </div>
-                `;
-            });
-        }
-
-        // 4. CALCULADORA TIKTOK
-        function initCalculator(costoUnitarioUsd) {
-            const input = document.getElementById('coin-input');
-            const output = document.getElementById('calc-output');
-            const btn = document.getElementById('btn-calc-buy');
-
-            input.addEventListener('input', (e) => {
-                const coins = parseInt(e.target.value);
-                if (coins > 0) {
-                    // FÓRMULA: (Monedas * CostoUnitario * Dolar * 1.10)
-                    const costoTotal = coins * costoUnitarioUsd * APP_DATA.tasa_dolar * 1.10;
-                    const precioFinal = Math.ceil(costoTotal);
-                    
-                    output.innerText = `${precioFinal} Bs`;
-                    
-                    const msg = `Hola, quiero una recarga PERSONALIZADA de *${coins} Monedas* TikTok. La web dice: ${precioFinal}Bs.`;
-                    btn.href = `https://wa.me/${APP_DATA.celular}?text=${encodeURIComponent(msg)}`;
-                    btn.style.display = 'block';
-                } else {
-                    output.innerText = "0 Bs";
-                    btn.style.display = 'none';
-                }
-            });
-        }
-
-        // TABS
-        function showTab(tabId) {
+        window.setTab = (id) => {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
             event.target.classList.add('active');
+        };
+
+        window.filtrar = (tipo) => {
+            let res = [...JUEGOS];
+            if(tipo === 'desc') res.sort((a,b) => b.descuento - a.descuento);
+            if(tipo === 'vip') res = res.filter(j => j.es_vip);
+            renderJuegos(res);
+        };
+
+        // --- EFECTO MATRIX (Canvas) ---
+        function initMatrix() {
+            const c = document.getElementById("matrix");
+            const ctx = c.getContext("2d");
+            c.width = window.innerWidth; c.height = window.innerHeight;
+            const chars = "10"; // Binario simple
+            const fontSize = 14;
+            const columns = c.width / fontSize;
+            const drops = Array(Math.floor(columns)).fill(1);
+            
+            function draw() {
+                ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                ctx.fillRect(0, 0, c.width, c.height);
+                ctx.fillStyle = "#0F0"; // Color verde matrix
+                ctx.font = fontSize + "px monospace";
+                for(let i=0; i<drops.length; i++) {
+                    const text = chars.charAt(Math.floor(Math.random()*chars.length));
+                    ctx.fillText(text, i*fontSize, drops[i]*fontSize);
+                    if(drops[i]*fontSize > c.height && Math.random() > 0.975) drops[i] = 0;
+                    drops[i]++;
+                }
+            }
+            setInterval(draw, 33);
         }
 
-        initStore();
+        init();
     </script>
 </body>
 </html>

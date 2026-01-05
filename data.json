@@ -1,13 +1,620 @@
 {
     "config": {
-        "tasa_dolar": 9.99,
-        "celular": "59170000000",
-        "costo_tiktok_unitario": 0.010333333333333333
+        "tasa": 9.98,
+        "celular": "59174355273",
+        "msg": "HOLA BABOSA!!",
+        "costo_tk": 0.010333333333333333
     },
-    "tiktok_packs": [
+    "juegos": [
+        {
+            "id": "632470",
+            "nombre": "Disco Elysium - The Final Cut",
+            "precio_bs": 110,
+            "precio_antes_bs": 440,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/632470/header.jpg",
+            "es_vip": false,
+            "score": 97
+        },
+        {
+            "id": "1687950",
+            "nombre": "Persona 5 Royal",
+            "precio_bs": 198,
+            "precio_antes_bs": 659,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1687950/header.jpg",
+            "es_vip": false,
+            "score": 95
+        },
+        {
+            "id": "4560",
+            "nombre": "Company of Heroes",
+            "precio_bs": 44,
+            "precio_antes_bs": 220,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/4560/header.jpg",
+            "es_vip": false,
+            "score": 93
+        },
+        {
+            "id": "587620",
+            "nombre": "Okami HD",
+            "precio_bs": 110,
+            "precio_antes_bs": 220,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/587620/header.jpg",
+            "es_vip": false,
+            "score": 92
+        },
+        {
+            "id": "2679460",
+            "nombre": "Metaphor: ReFantazio",
+            "precio_bs": 385,
+            "precio_antes_bs": 769,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2679460/header.jpg",
+            "es_vip": false,
+            "score": 92
+        },
+        {
+            "id": "269710",
+            "nombre": "Tumblestone",
+            "precio_bs": 55,
+            "precio_antes_bs": 275,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/269710/header.jpg",
+            "es_vip": false,
+            "score": 91
+        },
+        {
+            "id": "8880",
+            "nombre": "Freedom Force",
+            "precio_bs": 14,
+            "precio_antes_bs": 55,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/8880/header.jpg",
+            "es_vip": false,
+            "score": 90
+        },
+        {
+            "id": "1967430",
+            "nombre": "Ghost Trick: Phantom Detective",
+            "precio_bs": 109,
+            "precio_antes_bs": 330,
+            "descuento": 67,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1967430/header.jpg",
+            "es_vip": false,
+            "score": 90
+        },
+        {
+            "id": "2079180",
+            "nombre": "VIDEOVERSE",
+            "precio_bs": 100,
+            "precio_antes_bs": 143,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2079180/header.jpg",
+            "es_vip": false,
+            "score": 90
+        },
+        {
+            "id": "1875830",
+            "nombre": "Shin Megami Tensei V: Vengeance",
+            "precio_bs": 264,
+            "precio_antes_bs": 659,
+            "descuento": 60,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1875830/header.jpg",
+            "es_vip": false,
+            "score": 90
+        },
+        {
+            "id": "38440",
+            "nombre": "Sacrifice",
+            "precio_bs": 193,
+            "precio_antes_bs": 275,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/38440/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "49520",
+            "nombre": "Borderlands 2",
+            "precio_bs": 97,
+            "precio_antes_bs": 440,
+            "descuento": 78,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "501300",
+            "nombre": "What Remains of Edith Finch",
+            "precio_bs": 55,
+            "precio_antes_bs": 220,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/501300/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "273590",
+            "nombre": "Descent 3",
+            "precio_bs": 154,
+            "precio_antes_bs": 220,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/273590/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "883710",
+            "nombre": "Resident Evil 2",
+            "precio_bs": 165,
+            "precio_antes_bs": 659,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/883710/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "601150",
+            "nombre": "Devil May Cry 5",
+            "precio_bs": 83,
+            "precio_antes_bs": 330,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/601150/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "1533420",
+            "nombre": "Neon White",
+            "precio_bs": 110,
+            "precio_antes_bs": 275,
+            "descuento": 60,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1533420/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "1426210",
+            "nombre": "It Takes Two",
+            "precio_bs": 88,
+            "precio_antes_bs": 440,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "3375780",
+            "nombre": "Trails in the Sky 1st Chapter",
+            "precio_bs": 494,
+            "precio_antes_bs": 659,
+            "descuento": 25,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3375780/header.jpg",
+            "es_vip": false,
+            "score": 89
+        },
+        {
+            "id": "214700",
+            "nombre": "Thirty Flights of Loving",
+            "precio_bs": 28,
+            "precio_antes_bs": 55,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/214700/header.jpg",
+            "es_vip": false,
+            "score": 88
+        },
+        {
+            "id": "504230",
+            "nombre": "Celeste",
+            "precio_bs": 55,
+            "precio_antes_bs": 220,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/504230/header.jpg",
+            "es_vip": false,
+            "score": 88
+        },
+        {
+            "id": "2111190",
+            "nombre": "MULLET MADJACK",
+            "precio_bs": 154,
+            "precio_antes_bs": 220,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2111190/header.jpg",
+            "es_vip": false,
+            "score": 88
+        },
+        {
+            "id": "2008920",
+            "nombre": "Lorelei and the Laser Eyes",
+            "precio_bs": 165,
+            "precio_antes_bs": 275,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2008920/header.jpg",
+            "es_vip": false,
+            "score": 88
+        },
+        {
+            "id": "2054970",
+            "nombre": "Dragons Dogma 2",
+            "precio_bs": 323,
+            "precio_antes_bs": 769,
+            "descuento": 58,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2054970/header.jpg",
+            "es_vip": false,
+            "score": 88
+        },
+        {
+            "id": "2278790",
+            "nombre": "Grapple Dogs: Cosmic Canines",
+            "precio_bs": 99,
+            "precio_antes_bs": 198,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2278790/header.jpg",
+            "es_vip": false,
+            "score": 88
+        },
+        {
+            "id": "40800",
+            "nombre": "Super Meat Boy",
+            "precio_bs": 50,
+            "precio_antes_bs": 165,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/40800/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "9340",
+            "nombre": "Company of Heroes: Opposing Fronts",
+            "precio_bs": 44,
+            "precio_antes_bs": 220,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/9340/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "251470",
+            "nombre": "TowerFall Ascension",
+            "precio_bs": 33,
+            "precio_antes_bs": 165,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/251470/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "6830",
+            "nombre": "Commandos 2: Men of Courage",
+            "precio_bs": 28,
+            "precio_antes_bs": 55,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6830/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "1113000",
+            "nombre": "Persona 4 Golden",
+            "precio_bs": 110,
+            "precio_antes_bs": 220,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1113000/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "1300600",
+            "nombre": "Blind Drive",
+            "precio_bs": 55,
+            "precio_antes_bs": 110,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1300600/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "1127500",
+            "nombre": "Mini Motorways",
+            "precio_bs": 88,
+            "precio_antes_bs": 110,
+            "descuento": 20,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1127500/header.jpg",
+            "es_vip": false,
+            "score": 87
+        },
+        {
+            "id": "8800",
+            "nombre": "Civilization IV: Beyond the Sword",
+            "precio_bs": 66,
+            "precio_antes_bs": 330,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/8800/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "21680",
+            "nombre": "Bionic Commando: Rearmed",
+            "precio_bs": 36,
+            "precio_antes_bs": 110,
+            "descuento": 68,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/21680/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "496620",
+            "nombre": "Monster Slayers",
+            "precio_bs": 25,
+            "precio_antes_bs": 99,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/496620/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "243040",
+            "nombre": "Startopia",
+            "precio_bs": 39,
+            "precio_antes_bs": 77,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/243040/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "944430",
+            "nombre": "The Last Friend",
+            "precio_bs": 17,
+            "precio_antes_bs": 165,
+            "descuento": 90,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/944430/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "1772530",
+            "nombre": "Toy Tactics",
+            "precio_bs": 138,
+            "precio_antes_bs": 275,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1772530/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "2366970",
+            "nombre": "Arco",
+            "precio_bs": 132,
+            "precio_antes_bs": 220,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2366970/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "2634890",
+            "nombre": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+            "precio_bs": 275,
+            "precio_antes_bs": 549,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2634890/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "2361770",
+            "nombre": "SHINOBI: Art of Vengeance",
+            "precio_bs": 231,
+            "precio_antes_bs": 330,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2361770/header.jpg",
+            "es_vip": false,
+            "score": 86
+        },
+        {
+            "id": "4780",
+            "nombre": "Medieval II: Total War Kingdoms",
+            "precio_bs": 69,
+            "precio_antes_bs": 275,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/4780/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "98200",
+            "nombre": "Frozen Synapse",
+            "precio_bs": 138,
+            "precio_antes_bs": 275,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/98200/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "220440",
+            "nombre": "DMC - Devil May Cry",
+            "precio_bs": 83,
+            "precio_antes_bs": 330,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/220440/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "319050",
+            "nombre": "Chaos Reborn",
+            "precio_bs": 28,
+            "precio_antes_bs": 110,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/319050/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "44600",
+            "nombre": "GTR - FIA GT Racing Game",
+            "precio_bs": 39,
+            "precio_antes_bs": 77,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/44600/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "528720",
+            "nombre": "Shu",
+            "precio_bs": 10,
+            "precio_antes_bs": 110,
+            "descuento": 91,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/528720/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "813630",
+            "nombre": "Supraland",
+            "precio_bs": 55,
+            "precio_antes_bs": 220,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/813630/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "762610",
+            "nombre": "Russian Subway Dogs",
+            "precio_bs": 50,
+            "precio_antes_bs": 165,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/762610/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "945360",
+            "nombre": "Among Us",
+            "precio_bs": 33,
+            "precio_antes_bs": 55,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "595790",
+            "nombre": "Hell is Other Demons",
+            "precio_bs": 55,
+            "precio_antes_bs": 110,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/595790/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "753640",
+            "nombre": "Outer Wilds",
+            "precio_bs": 165,
+            "precio_antes_bs": 275,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/753640/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "1311510",
+            "nombre": "Embracelet",
+            "precio_bs": 29,
+            "precio_antes_bs": 143,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1311510/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "598550",
+            "nombre": "Huntdown",
+            "precio_bs": 44,
+            "precio_antes_bs": 220,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/598550/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "1668190",
+            "nombre": "Once Upon a Jester",
+            "precio_bs": 42,
+            "precio_antes_bs": 165,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1668190/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "1568970",
+            "nombre": "Torn Away",
+            "precio_bs": 66,
+            "precio_antes_bs": 165,
+            "descuento": 60,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1568970/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "2510710",
+            "nombre": "Kunitsu-Gami: Path of the Goddess",
+            "precio_bs": 330,
+            "precio_antes_bs": 440,
+            "descuento": 25,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2510710/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "2825110",
+            "nombre": "Technotopia",
+            "precio_bs": 22,
+            "precio_antes_bs": 55,
+            "descuento": 60,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2825110/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "3597580",
+            "nombre": "Earthion",
+            "precio_bs": 154,
+            "precio_antes_bs": 220,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3597580/header.jpg",
+            "es_vip": false,
+            "score": 85
+        },
+        {
+            "id": "55230",
+            "nombre": "Saints Row: The Third",
+            "precio_bs": 28,
+            "precio_antes_bs": 110,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/55230/header.jpg",
+            "es_vip": false,
+            "score": 84
+        }
+    ],
+    "tiktok": [
         {
             "monedas": 30,
             "precio_bs": 4
+        },
+        {
+            "monedas": 70,
+            "precio_bs": 8
         },
         {
             "monedas": 350,
@@ -31,549 +638,7 @@
         },
         {
             "monedas": 17500,
-            "precio_bs": 1988
-        }
-    ],
-    "steam": [
-        {
-            "id": "954650",
-            "nombre": "Druidstone: The Secret of the Menhir Forest",
-            "precio_orig_usd": 24.99,
-            "precio_final_usd": 3.74,
-            "descuento": 85,
-            "precio_bs": 42,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/954650/header.jpg"
-        },
-        {
-            "id": "632470",
-            "nombre": "Disco Elysium - The Final Cut",
-            "precio_orig_usd": 39.99,
-            "precio_final_usd": 3.99,
-            "descuento": 90,
-            "precio_bs": 44,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/632470/header.jpg"
-        },
-        {
-            "id": "373420",
-            "nombre": "Divinity: Original Sin - Enhanced Edition",
-            "precio_orig_usd": 39.99,
-            "precio_final_usd": 3.99,
-            "descuento": 90,
-            "precio_bs": 44,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/373420/header.jpg"
-        },
-        {
-            "id": "292030",
-            "nombre": "The Witcher 3: Wild Hunt",
-            "precio_orig_usd": 39.99,
-            "precio_final_usd": 3.99,
-            "descuento": 90,
-            "precio_bs": 44,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg"
-        },
-        {
-            "id": "523780",
-            "nombre": "Emily is Away Too",
-            "precio_orig_usd": 4.99,
-            "precio_final_usd": 0.99,
-            "descuento": 80,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/523780/header.jpg"
-        },
-        {
-            "id": "220",
-            "nombre": "Half-Life 2",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 1.99,
-            "descuento": 80,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
-        },
-        {
-            "id": "70",
-            "nombre": "Half-Life",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 1.99,
-            "descuento": 80,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg"
-        },
-        {
-            "id": "620",
-            "nombre": "Portal 2",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 1.99,
-            "descuento": 80,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg"
-        },
-        {
-            "id": "646570",
-            "nombre": "Slay the Spire",
-            "precio_orig_usd": 24.99,
-            "precio_final_usd": 2.49,
-            "descuento": 90,
-            "precio_bs": 28,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg"
-        },
-        {
-            "id": "571310",
-            "nombre": "SteamWorld Dig 2",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.19,
-            "descuento": 94,
-            "precio_bs": 14,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/571310/header.jpg"
-        },
-        {
-            "id": "48000",
-            "nombre": "LIMBO",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 0.99,
-            "descuento": 90,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/48000/header.jpg"
-        },
-        {
-            "id": "6850",
-            "nombre": "Hitman 2: Silent Assassin",
-            "precio_orig_usd": 8.99,
-            "precio_final_usd": 0.89,
-            "descuento": 90,
-            "precio_bs": 10,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6850/header.jpg"
-        },
-        {
-            "id": "304430",
-            "nombre": "INSIDE",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.99,
-            "descuento": 90,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/304430/header.jpg"
-        },
-        {
-            "id": "390290",
-            "nombre": "Bulb Boy",
-            "precio_orig_usd": 8.99,
-            "precio_final_usd": 0.89,
-            "descuento": 90,
-            "precio_bs": 10,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/390290/header.jpg"
-        },
-        {
-            "id": "289070",
-            "nombre": "Sid Meiers Civilization VI",
-            "precio_orig_usd": 59.99,
-            "precio_final_usd": 5.99,
-            "descuento": 90,
-            "precio_bs": 66,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg"
-        },
-        {
-            "id": "3900",
-            "nombre": "Sid Meier's Civilization IV",
-            "precio_orig_usd": 29.99,
-            "precio_final_usd": 5.99,
-            "descuento": 80,
-            "precio_bs": 66,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3900/header.jpg"
-        },
-        {
-            "id": "236850",
-            "nombre": "Europa Universalis IV",
-            "precio_orig_usd": 49.99,
-            "precio_final_usd": 4.99,
-            "descuento": 90,
-            "precio_bs": 55,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/236850/header.jpg"
-        },
-        {
-            "id": "241600",
-            "nombre": "Rogue Legacy",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 1.49,
-            "descuento": 90,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/241600/header.jpg"
-        },
-        {
-            "id": "244160",
-            "nombre": "Homeworld Remastered Collection",
-            "precio_orig_usd": 34.99,
-            "precio_final_usd": 3.49,
-            "descuento": 90,
-            "precio_bs": 39,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/244160/header.jpg"
-        },
-        {
-            "id": "396750",
-            "nombre": "Everspace",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 0.99,
-            "descuento": 95,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/396750/header.jpg"
-        },
-        {
-            "id": "57300",
-            "nombre": "Amnesia: The Dark Descent",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.99,
-            "descuento": 90,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/57300/header.jpg"
-        },
-        {
-            "id": "4560",
-            "nombre": "Company of Heroes",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 3.99,
-            "descuento": 80,
-            "precio_bs": 44,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/4560/header.jpg"
-        },
-        {
-            "id": "322190",
-            "nombre": "SteamWorld Heist",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 1.04,
-            "descuento": 93,
-            "precio_bs": 12,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/322190/header.jpg"
-        },
-        {
-            "id": "8190",
-            "nombre": "Just Cause 2",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 1.49,
-            "descuento": 90,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/8190/header.jpg"
-        },
-        {
-            "id": "627270",
-            "nombre": "Injustice 2",
-            "precio_orig_usd": 49.99,
-            "precio_final_usd": 4.99,
-            "descuento": 90,
-            "precio_bs": 55,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/627270/header.jpg"
-        },
-        {
-            "id": "1823930",
-            "nombre": "Wavetale",
-            "precio_orig_usd": 29.99,
-            "precio_final_usd": 1.49,
-            "descuento": 95,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1823930/header.jpg"
-        },
-        {
-            "id": "418240",
-            "nombre": "Shadow Tactics: Blades of the Shogun",
-            "precio_orig_usd": 39.99,
-            "precio_final_usd": 3.99,
-            "descuento": 90,
-            "precio_bs": 44,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/418240/header.jpg"
-        },
-        {
-            "id": "1222690",
-            "nombre": "Dragon Age Inquisition",
-            "precio_orig_usd": 39.99,
-            "precio_final_usd": 3.99,
-            "descuento": 90,
-            "precio_bs": 44,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222690/header.jpg"
-        },
-        {
-            "id": "558420",
-            "nombre": "Stories Untold",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 0.99,
-            "descuento": 90,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/558420/header.jpg"
-        },
-        {
-            "id": "1328670",
-            "nombre": "Mass Effect Legendary Edition",
-            "precio_orig_usd": 59.99,
-            "precio_final_usd": 5.99,
-            "descuento": 90,
-            "precio_bs": 66,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328670/header.jpg"
-        },
-        {
-            "id": "518699",
-            "nombre": "Mortal Kombat 11 Ultimate",
-            "precio_orig_usd": 59.99,
-            "precio_final_usd": 8.99,
-            "descuento": 85,
-            "precio_bs": 99,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/518699/header.jpg"
-        },
-        {
-            "id": "376300",
-            "nombre": "GUILTY GEAR Xrd -SIGN-",
-            "precio_orig_usd": 29.99,
-            "precio_final_usd": 2.99,
-            "descuento": 90,
-            "precio_bs": 33,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/376300/header.jpg"
-        },
-        {
-            "id": "108710",
-            "nombre": "Alan Wake",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 1.49,
-            "descuento": 90,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/108710/header.jpg"
-        },
-        {
-            "id": "20920",
-            "nombre": "The Witcher 2: Assassins of Kings Enhanced Edition",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 2.99,
-            "descuento": 85,
-            "precio_bs": 33,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/20920/header.jpg"
-        },
-        {
-            "id": "274350",
-            "nombre": "Dropsy",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 0.99,
-            "descuento": 90,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/274350/header.jpg"
-        },
-        {
-            "id": "1174180",
-            "nombre": "Red Dead Redemption 2",
-            "precio_orig_usd": 59.99,
-            "precio_final_usd": 14.99,
-            "descuento": 75,
-            "precio_bs": 165,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
-        },
-        {
-            "id": "440550",
-            "nombre": "Atomik: RunGunJumpGun",
-            "precio_orig_usd": 7.99,
-            "precio_final_usd": 0.79,
-            "descuento": 90,
-            "precio_bs": 9,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/440550/header.jpg"
-        },
-        {
-            "id": "39190",
-            "nombre": "Dungeon Siege",
-            "precio_orig_usd": 6.99,
-            "precio_final_usd": 0.97,
-            "descuento": 86,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/39190/header.jpg"
-        },
-        {
-            "id": "6860",
-            "nombre": "Hitman: Blood Money",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 0.99,
-            "descuento": 90,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6860/header.jpg"
-        },
-        {
-            "id": "3830",
-            "nombre": "Psychonauts",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 1.49,
-            "descuento": 85,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3830/header.jpg"
-        },
-        {
-            "id": "304390",
-            "nombre": "For Honor",
-            "precio_orig_usd": 29.99,
-            "precio_final_usd": 1.49,
-            "descuento": 95,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/304390/header.jpg"
-        },
-        {
-            "id": "231160",
-            "nombre": "The Swapper",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 2.24,
-            "descuento": 85,
-            "precio_bs": 25,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/231160/header.jpg"
-        },
-        {
-            "id": "3010",
-            "nombre": "Xpand Rally",
-            "precio_orig_usd": 4.99,
-            "precio_final_usd": 0.54,
-            "descuento": 89,
-            "precio_bs": 6,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3010/header.jpg"
-        },
-        {
-            "id": "1213210",
-            "nombre": "Command and Conquer Remastered Collection",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.99,
-            "descuento": 90,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1213210/header.jpg"
-        },
-        {
-            "id": "201420",
-            "nombre": "Toki Tori 2",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 0.89,
-            "descuento": 94,
-            "precio_bs": 10,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/201420/header.jpg"
-        },
-        {
-            "id": "405640",
-            "nombre": "Pony Island",
-            "precio_orig_usd": 4.99,
-            "precio_final_usd": 0.74,
-            "descuento": 85,
-            "precio_bs": 9,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/405640/header.jpg"
-        },
-        {
-            "id": "416680",
-            "nombre": "Zombie Night Terror",
-            "precio_orig_usd": 12.99,
-            "precio_final_usd": 1.29,
-            "descuento": 90,
-            "precio_bs": 15,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/416680/header.jpg"
-        },
-        {
-            "id": "20900",
-            "nombre": "The Witcher: Enhanced Edition Director's Cut",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 1.49,
-            "descuento": 85,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/20900/header.jpg"
-        },
-        {
-            "id": "23490",
-            "nombre": "Tropico 3",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.99,
-            "descuento": 90,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/23490/header.jpg"
-        },
-        {
-            "id": "1872680",
-            "nombre": "The Knight Witch",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.99,
-            "descuento": 90,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1872680/header.jpg"
-        },
-        {
-            "id": "552500",
-            "nombre": "Warhammer: Vermintide 2",
-            "precio_orig_usd": 29.99,
-            "precio_final_usd": 2.99,
-            "descuento": 90,
-            "precio_bs": 33,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg"
-        },
-        {
-            "id": "448510",
-            "nombre": "Overcooked",
-            "precio_orig_usd": 16.99,
-            "precio_final_usd": 1.69,
-            "descuento": 90,
-            "precio_bs": 19,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/448510/header.jpg"
-        },
-        {
-            "id": "416600",
-            "nombre": "Full Metal Furies",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 2.99,
-            "descuento": 85,
-            "precio_bs": 33,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/416600/header.jpg"
-        },
-        {
-            "id": "400",
-            "nombre": "Portal",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 1.99,
-            "descuento": 80,
-            "precio_bs": 22,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/400/header.jpg"
-        },
-        {
-            "id": "617480",
-            "nombre": "Tower of Time",
-            "precio_orig_usd": 24.99,
-            "precio_final_usd": 1.74,
-            "descuento": 93,
-            "precio_bs": 20,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/617480/header.jpg"
-        },
-        {
-            "id": "454410",
-            "nombre": "GIGA WRECKER",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.19,
-            "descuento": 94,
-            "precio_bs": 14,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/454410/header.jpg"
-        },
-        {
-            "id": "626660",
-            "nombre": "Flipping Death",
-            "precio_orig_usd": 19.99,
-            "precio_final_usd": 1.19,
-            "descuento": 94,
-            "precio_bs": 14,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/626660/header.jpg"
-        },
-        {
-            "id": "1525660",
-            "nombre": "Sunblaze",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 1.49,
-            "descuento": 90,
-            "precio_bs": 17,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1525660/header.jpg"
-        },
-        {
-            "id": "232430",
-            "nombre": "Gone Home",
-            "precio_orig_usd": 14.99,
-            "precio_final_usd": 2.24,
-            "descuento": 85,
-            "precio_bs": 25,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/232430/header.jpg"
-        },
-        {
-            "id": "431250",
-            "nombre": "Mushroom Wars",
-            "precio_orig_usd": 9.99,
-            "precio_final_usd": 0.99,
-            "descuento": 90,
-            "precio_bs": 11,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/431250/header.jpg"
+            "precio_bs": 1986
         }
     ]
 }
