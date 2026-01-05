@@ -1,0 +1,362 @@
+[
+    {
+        "id": "396750",
+        "nombre": "Everspace",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/396750/header.jpg"
+    },
+    {
+        "id": "304390",
+        "nombre": "For Honor",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/304390/header.jpg"
+    },
+    {
+        "id": "1823930",
+        "nombre": "Wavetale",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1823930/header.jpg"
+    },
+    {
+        "id": "201420",
+        "nombre": "Toki Tori 2",
+        "precio": 10,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/201420/header.jpg"
+    },
+    {
+        "id": "454410",
+        "nombre": "GIGA WRECKER",
+        "precio": 14,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/454410/header.jpg"
+    },
+    {
+        "id": "571310",
+        "nombre": "SteamWorld Dig 2",
+        "precio": 14,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/571310/header.jpg"
+    },
+    {
+        "id": "626660",
+        "nombre": "Flipping Death",
+        "precio": 14,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/626660/header.jpg"
+    },
+    {
+        "id": "1726120",
+        "nombre": "Cursed to Golf",
+        "precio": 14,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1726120/header.jpg"
+    },
+    {
+        "id": "322190",
+        "nombre": "SteamWorld Heist",
+        "precio": 12,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/322190/header.jpg"
+    },
+    {
+        "id": "617480",
+        "nombre": "Tower of Time",
+        "precio": 20,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/617480/header.jpg"
+    },
+    {
+        "id": "1283410",
+        "nombre": "Tails of Iron",
+        "precio": 22,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1283410/header.jpg"
+    },
+    {
+        "id": "502500",
+        "nombre": "ACE COMBAT 7: SKIES UNKNOWN",
+        "precio": 53,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/502500/header.jpg"
+    },
+    {
+        "id": "252410",
+        "nombre": "SteamWorld Dig",
+        "precio": 10,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/252410/header.jpg"
+    },
+    {
+        "id": "528720",
+        "nombre": "Shu",
+        "precio": 10,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/528720/header.jpg"
+    },
+    {
+        "id": "1599560",
+        "nombre": "Wanderer",
+        "precio": 6,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1599560/header.jpg"
+    },
+    {
+        "id": "440550",
+        "nombre": "Atomik: RunGunJumpGun",
+        "precio": 9,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/440550/header.jpg"
+    },
+    {
+        "id": "6850",
+        "nombre": "Hitman 2: Silent Assassin",
+        "precio": 10,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6850/header.jpg"
+    },
+    {
+        "id": "390290",
+        "nombre": "Bulb Boy",
+        "precio": 10,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/390290/header.jpg"
+    },
+    {
+        "id": "48000",
+        "nombre": "LIMBO",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/48000/header.jpg"
+    },
+    {
+        "id": "91200",
+        "nombre": "Anomaly: Warzone Earth",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/91200/header.jpg"
+    },
+    {
+        "id": "64000",
+        "nombre": "Men of War: Assault Squad",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/64000/header.jpg"
+    },
+    {
+        "id": "6860",
+        "nombre": "Hitman: Blood Money",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6860/header.jpg"
+    },
+    {
+        "id": "42140",
+        "nombre": "Hamilton's Great Adventure",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/42140/header.jpg"
+    },
+    {
+        "id": "99700",
+        "nombre": "NightSky",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/99700/header.jpg"
+    },
+    {
+        "id": "6420",
+        "nombre": "Nexus - The Jupiter Incident",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6420/header.jpg"
+    },
+    {
+        "id": "3720",
+        "nombre": "Evil Genius",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3720/header.jpg"
+    },
+    {
+        "id": "249590",
+        "nombre": "Teslagrad",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/249590/header.jpg"
+    },
+    {
+        "id": "256390",
+        "nombre": "MotoGP 14",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/256390/header.jpg"
+    },
+    {
+        "id": "356790",
+        "nombre": "Galacide",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/356790/header.jpg"
+    },
+    {
+        "id": "269670",
+        "nombre": "BADLAND: Game of the Year Edition",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/269670/header.jpg"
+    },
+    {
+        "id": "274350",
+        "nombre": "Dropsy",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/274350/header.jpg"
+    },
+    {
+        "id": "431250",
+        "nombre": "Mushroom Wars",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/431250/header.jpg"
+    },
+    {
+        "id": "370910",
+        "nombre": "Kathy Rain",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/370910/header.jpg"
+    },
+    {
+        "id": "532290",
+        "nombre": "Dark Train",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/532290/header.jpg"
+    },
+    {
+        "id": "558420",
+        "nombre": "Stories Untold",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/558420/header.jpg"
+    },
+    {
+        "id": "684410",
+        "nombre": "Bridge Constructor Portal",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/684410/header.jpg"
+    },
+    {
+        "id": "218620",
+        "nombre": "PAYDAY 2",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/218620/header.jpg"
+    },
+    {
+        "id": "700160",
+        "nombre": "Semblance",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/700160/header.jpg"
+    },
+    {
+        "id": "1386870",
+        "nombre": "Wraith: The Oblivion - Afterlife",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1386870/header.jpg"
+    },
+    {
+        "id": "2060870",
+        "nombre": "Invincible Presents: Atom Eve",
+        "precio": 11,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2060870/header.jpg"
+    },
+    {
+        "id": "676630",
+        "nombre": "Attentat 1942",
+        "precio": 12,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/676630/header.jpg"
+    },
+    {
+        "id": "1582680",
+        "nombre": "Trolley Problem, Inc.",
+        "precio": 12,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1582680/header.jpg"
+    },
+    {
+        "id": "209190",
+        "nombre": "Stealth Bastard Deluxe",
+        "precio": 15,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/209190/header.jpg"
+    },
+    {
+        "id": "332250",
+        "nombre": "The Next Penelope",
+        "precio": 15,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/332250/header.jpg"
+    },
+    {
+        "id": "384110",
+        "nombre": "Pathologic Classic HD",
+        "precio": 15,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/384110/header.jpg"
+    },
+    {
+        "id": "416680",
+        "nombre": "Zombie Night Terror",
+        "precio": 15,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/416680/header.jpg"
+    },
+    {
+        "id": "811270",
+        "nombre": "Impulsion",
+        "precio": 15,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/811270/header.jpg"
+    },
+    {
+        "id": "1538850",
+        "nombre": "Grotto",
+        "precio": 15,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1538850/header.jpg"
+    },
+    {
+        "id": "8190",
+        "nombre": "Just Cause 2",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/8190/header.jpg"
+    },
+    {
+        "id": "46480",
+        "nombre": "Still Life",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/46480/header.jpg"
+    },
+    {
+        "id": "236730",
+        "nombre": "Anomaly 2",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/236730/header.jpg"
+    },
+    {
+        "id": "242110",
+        "nombre": "Joe Danger 2: The Movie",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/242110/header.jpg"
+    },
+    {
+        "id": "241600",
+        "nombre": "Rogue Legacy",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/241600/header.jpg"
+    },
+    {
+        "id": "272470",
+        "nombre": "The Incredible Adventures of Van Helsing II",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/272470/header.jpg"
+    },
+    {
+        "id": "319450",
+        "nombre": "Chariot",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/319450/header.jpg"
+    },
+    {
+        "id": "279440",
+        "nombre": "Joe Dever's Lone Wolf HD Remastered",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/279440/header.jpg"
+    },
+    {
+        "id": "329380",
+        "nombre": "Stealth Inc. 2: A Game of Clones",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/329380/header.jpg"
+    },
+    {
+        "id": "363680",
+        "nombre": "Battlefleet Gothic: Armada",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/363680/header.jpg"
+    },
+    {
+        "id": "368740",
+        "nombre": "Obliteracers",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/368740/header.jpg"
+    },
+    {
+        "id": "421740",
+        "nombre": "Goetia",
+        "precio": 17,
+        "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/421740/header.jpg"
+    }
+]

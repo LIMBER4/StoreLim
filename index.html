@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Bolivia - Catálogo</title>
+    <style>
+        /* --- ESTILOS (CSS) --- */
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent: #66c0f4; /* Azul Steam */
+            --whatsapp: #25D366; /* Verde WhatsApp */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Pegajoso */
+        header {
+            background-color: #171a21;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+        
+        /* Buscador */
+        #search-bar {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #2a475e;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Contenedor de Juegos */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        /* Tarjeta de Juego */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-body { padding: 10px; }
+
+        .card-title {
+            font-size: 0.9rem;
+            margin: 0 0 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .btn-ws {
+            display: block;
+            width: 100%;
+            background-color: var(--whatsapp);
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-top: 30px;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsive para celulares */
+        @media (min-width: 600px) {
+            .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+            header { flex-direction: row; justify-content: space-between; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SteamBO 🇧🇴</div>
+        <input type="text" id="search-bar" placeholder="Buscar juego...">
+    </header>
+
+    <div class="container">
+        <h2 style="font-weight: normal; color: #b3b3b3;">Ofertas Destacadas</h2>
+        <div id="game-grid" class="grid">
+            </div>
+    </div>
+
+    <footer>
+        <p>Precios en Bolivianos - Pagos por QR</p>
+        <p>Desarrollado en Cochabamba</p>
+    </footer>
+
+    <script>
+        // --- TU NÚMERO DE CELULAR ---
+        const MY_PHONE = "59174355273"; // CAMBIA ESTO POR TU NÚMERO REAL
+
+        // Función principal
+        async function loadGames() {
+            try {
+                // Leemos el archivo JSON que genera tu Python
+                const response = await fetch('juegos.json');
+                const games = await response.json();
+                renderGames(games);
+
+                // Activamos el buscador
+                document.getElementById('search-bar').addEventListener('keyup', (e) => {
+                    const term = e.target.value.toLowerCase();
+                    const filtered = games.filter(g => g.nombre.toLowerCase().includes(term));
+                    renderGames(filtered);
+                });
+
+            } catch (error) {
+                console.error("Error cargando juegos:", error);
+                document.getElementById('game-grid').innerHTML = "<p>Cargando catálogo...</p>";
+            }
+        }
+
+        function renderGames(listaJuegos) {
+            const container = document.getElementById('game-grid');
+            container.innerHTML = ''; // Limpiar
+
+            listaJuegos.forEach(juego => {
+                // Crear enlace de WhatsApp
+                const mensaje = `Hola, quiero comprar *${juego.nombre}*. Precio en web: ${juego.precio}Bs.`;
+                const link = `https://wa.me/${MY_PHONE}?text=${encodeURIComponent(mensaje)}`;
+
+                // Crear HTML de la tarjeta
+                const card = `
+                    <div class="card">
+                        <img src="${juego.imagen}" alt="${juego.nombre}" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">${juego.nombre}</h3>
+                            <div class="price">${juego.precio} Bs.</div>
+                            <a href="${link}" class="btn-ws" target="_blank">Pedir por QR</a>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        // Iniciar
+        loadGames();
+    </script>
+</body>
+</html>
+
