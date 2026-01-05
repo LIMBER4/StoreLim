@@ -1,8 +1,8 @@
 {
     "config": {
-        "tasa": 9.98,
+        "tasa": 9.85,
         "celular": "59174355273",
-        "msg": "comprame pe :)",
+        "msg": "Pruebaaaaa!! :(",
         "costo_tk": 0.010333333333333333
     },
     "vips": [
@@ -19,7 +19,7 @@
         {
             "id": 550,
             "nombre": "Left 4 Dead 2",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 9.99,
             "usd_now": 9.99,
             "descuento": 0,
@@ -29,7 +29,7 @@
         {
             "id": 252490,
             "nombre": "Rust",
-            "precio_bs": 440,
+            "precio_bs": 434,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -39,7 +39,7 @@
         {
             "id": 1174180,
             "nombre": "Red Dead Redemption 2",
-            "precio_bs": 659,
+            "precio_bs": 650,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -49,7 +49,7 @@
         {
             "id": 105600,
             "nombre": "Terraria",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 9.99,
             "usd_now": 9.99,
             "descuento": 0,
@@ -59,7 +59,7 @@
         {
             "id": 1245620,
             "nombre": "ELDEN RING",
-            "precio_bs": 659,
+            "precio_bs": 650,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -69,7 +69,7 @@
         {
             "id": 1593500,
             "nombre": "God of War",
-            "precio_bs": 549,
+            "precio_bs": 542,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -79,7 +79,7 @@
         {
             "id": 1817070,
             "nombre": "Marvel\u2019s Spider-Man Remastered",
-            "precio_bs": 659,
+            "precio_bs": 650,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -89,7 +89,7 @@
         {
             "id": 292030,
             "nombre": "The Witcher 3: Wild Hunt",
-            "precio_bs": 440,
+            "precio_bs": 434,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -99,7 +99,7 @@
         {
             "id": 1091500,
             "nombre": "Cyberpunk 2077",
-            "precio_bs": 659,
+            "precio_bs": 650,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -129,7 +129,7 @@
         {
             "id": 221100,
             "nombre": "DayZ",
-            "precio_bs": 549,
+            "precio_bs": 542,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -139,7 +139,7 @@
         {
             "id": 250900,
             "nombre": "The Binding of Isaac: Rebirth",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 14.99,
             "usd_now": 14.99,
             "descuento": 0,
@@ -149,7 +149,7 @@
         {
             "id": 268910,
             "nombre": "Cuphead",
-            "precio_bs": 220,
+            "precio_bs": 217,
             "usd_orig": 19.99,
             "usd_now": 19.99,
             "descuento": 0,
@@ -159,7 +159,7 @@
         {
             "id": 413150,
             "nombre": "Stardew Valley",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 14.99,
             "usd_now": 14.99,
             "descuento": 0,
@@ -179,7 +179,7 @@
         {
             "id": 892970,
             "nombre": "Valheim",
-            "precio_bs": 220,
+            "precio_bs": 217,
             "usd_orig": 19.99,
             "usd_now": 19.99,
             "descuento": 0,
@@ -209,7 +209,7 @@
         {
             "id": 381210,
             "nombre": "Dead by Daylight",
-            "precio_bs": 220,
+            "precio_bs": 217,
             "usd_orig": 19.99,
             "usd_now": 19.99,
             "descuento": 0,
@@ -229,7 +229,7 @@
         {
             "id": 2050650,
             "nombre": "Resident Evil 4",
-            "precio_bs": 440,
+            "precio_bs": 434,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -249,7 +249,7 @@
         {
             "id": 304240,
             "nombre": "Resident Evil",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 39.99,
             "usd_now": 9.99,
             "descuento": 75,
@@ -259,7 +259,7 @@
         {
             "id": 2399830,
             "nombre": "ARK: Survival Ascended",
-            "precio_bs": 247,
+            "precio_bs": 244,
             "usd_orig": 44.99,
             "usd_now": 22.49,
             "descuento": 50,
@@ -269,7 +269,7 @@
         {
             "id": 1966720,
             "nombre": "Lethal Company",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 9.99,
             "usd_now": 9.99,
             "descuento": 0,
@@ -279,7 +279,7 @@
         {
             "id": 1238840,
             "nombre": "Battlefield\u2122 1",
-            "precio_bs": 440,
+            "precio_bs": 434,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -289,7 +289,7 @@
         {
             "id": 1238810,
             "nombre": "Battlefield\u2122 V",
-            "precio_bs": 549,
+            "precio_bs": 542,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -299,7 +299,7 @@
         {
             "id": 1196590,
             "nombre": "Resident Evil Village",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 49.99,
             "usd_now": 14.99,
             "descuento": 70,
@@ -309,7 +309,7 @@
         {
             "id": 1623730,
             "nombre": "Palworld",
-            "precio_bs": 330,
+            "precio_bs": 325,
             "usd_orig": 29.99,
             "usd_now": 29.99,
             "descuento": 0,
@@ -319,7 +319,7 @@
         {
             "id": 1604030,
             "nombre": "V Rising",
-            "precio_bs": 385,
+            "precio_bs": 380,
             "usd_orig": 34.99,
             "usd_now": 34.99,
             "descuento": 0,
@@ -329,7 +329,7 @@
         {
             "id": 1326470,
             "nombre": "Sons Of The Forest",
-            "precio_bs": 330,
+            "precio_bs": 325,
             "usd_orig": 29.99,
             "usd_now": 29.99,
             "descuento": 0,
@@ -339,7 +339,7 @@
         {
             "id": 552520,
             "nombre": "Far Cry\u00ae 5",
-            "precio_bs": 659,
+            "precio_bs": 650,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -349,7 +349,7 @@
         {
             "id": 1551360,
             "nombre": "Forza Horizon 5",
-            "precio_bs": 659,
+            "precio_bs": 650,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -371,7 +371,7 @@
         {
             "id": "632470",
             "nombre": "Disco Elysium - The Final Cut",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 39.99,
             "usd_now": 9.99,
             "descuento": 75,
@@ -381,7 +381,7 @@
         {
             "id": "1687950",
             "nombre": "Persona 5 Royal",
-            "precio_bs": 198,
+            "precio_bs": 195,
             "usd_orig": 59.99,
             "usd_now": 17.99,
             "descuento": 70,
@@ -401,7 +401,7 @@
         {
             "id": "587620",
             "nombre": "Okami HD",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 19.99,
             "usd_now": 9.99,
             "descuento": 50,
@@ -411,7 +411,7 @@
         {
             "id": "2679460",
             "nombre": "Metaphor: ReFantazio",
-            "precio_bs": 385,
+            "precio_bs": 380,
             "usd_orig": 69.99,
             "usd_now": 34.99,
             "descuento": 50,
@@ -431,7 +431,7 @@
         {
             "id": "1967430",
             "nombre": "Ghost Trick: Phantom Detective",
-            "precio_bs": 109,
+            "precio_bs": 108,
             "usd_orig": 29.99,
             "usd_now": 9.89,
             "descuento": 67,
@@ -441,7 +441,7 @@
         {
             "id": "2079180",
             "nombre": "VIDEOVERSE",
-            "precio_bs": 100,
+            "precio_bs": 99,
             "usd_orig": 12.99,
             "usd_now": 9.09,
             "descuento": 30,
@@ -451,7 +451,7 @@
         {
             "id": "1875830",
             "nombre": "Shin Megami Tensei V: Vengeance",
-            "precio_bs": 264,
+            "precio_bs": 260,
             "usd_orig": 59.99,
             "usd_now": 23.99,
             "descuento": 60,
@@ -461,7 +461,7 @@
         {
             "id": "49520",
             "nombre": "Borderlands 2",
-            "precio_bs": 97,
+            "precio_bs": 96,
             "usd_orig": 39.99,
             "usd_now": 8.79,
             "descuento": 78,
@@ -481,7 +481,7 @@
         {
             "id": "883710",
             "nombre": "Resident Evil 2",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 59.99,
             "usd_now": 14.99,
             "descuento": 75,
@@ -491,7 +491,7 @@
         {
             "id": "601150",
             "nombre": "Devil May Cry 5",
-            "precio_bs": 83,
+            "precio_bs": 82,
             "usd_orig": 29.99,
             "usd_now": 7.49,
             "descuento": 75,
@@ -501,7 +501,7 @@
         {
             "id": "1533420",
             "nombre": "Neon White",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 24.99,
             "usd_now": 9.99,
             "descuento": 60,
@@ -511,7 +511,7 @@
         {
             "id": "1426210",
             "nombre": "It Takes Two",
-            "precio_bs": 88,
+            "precio_bs": 87,
             "usd_orig": 39.99,
             "usd_now": 7.99,
             "descuento": 80,
@@ -521,7 +521,7 @@
         {
             "id": "3375780",
             "nombre": "Trails in the Sky 1st Chapter",
-            "precio_bs": 494,
+            "precio_bs": 488,
             "usd_orig": 59.99,
             "usd_now": 44.99,
             "descuento": 25,
@@ -531,7 +531,7 @@
         {
             "id": "214700",
             "nombre": "Thirty Flights of Loving",
-            "precio_bs": 28,
+            "precio_bs": 27,
             "usd_orig": 4.99,
             "usd_now": 2.49,
             "descuento": 50,
@@ -551,7 +551,7 @@
         {
             "id": "2111190",
             "nombre": "MULLET MADJACK",
-            "precio_bs": 154,
+            "precio_bs": 152,
             "usd_orig": 19.99,
             "usd_now": 13.99,
             "descuento": 30,
@@ -561,7 +561,7 @@
         {
             "id": "2008920",
             "nombre": "Lorelei and the Laser Eyes",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 24.99,
             "usd_now": 14.99,
             "descuento": 40,
@@ -571,7 +571,7 @@
         {
             "id": "2054970",
             "nombre": "Dragons Dogma 2",
-            "precio_bs": 323,
+            "precio_bs": 319,
             "usd_orig": 69.99,
             "usd_now": 29.39,
             "descuento": 58,
@@ -581,7 +581,7 @@
         {
             "id": "2278790",
             "nombre": "Grapple Dogs: Cosmic Canines",
-            "precio_bs": 99,
+            "precio_bs": 98,
             "usd_orig": 17.99,
             "usd_now": 8.99,
             "descuento": 50,
@@ -591,7 +591,7 @@
         {
             "id": "40800",
             "nombre": "Super Meat Boy",
-            "precio_bs": 50,
+            "precio_bs": 49,
             "usd_orig": 14.99,
             "usd_now": 4.49,
             "descuento": 70,
@@ -621,7 +621,7 @@
         {
             "id": "1113000",
             "nombre": "Persona 4 Golden",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 19.99,
             "usd_now": 9.99,
             "descuento": 50,
@@ -631,7 +631,7 @@
         {
             "id": "1127500",
             "nombre": "Mini Motorways",
-            "precio_bs": 88,
+            "precio_bs": 87,
             "usd_orig": 9.99,
             "usd_now": 7.99,
             "descuento": 20,
@@ -641,7 +641,7 @@
         {
             "id": "21680",
             "nombre": "Bionic Commando: Rearmed",
-            "precio_bs": 36,
+            "precio_bs": 35,
             "usd_orig": 9.99,
             "usd_now": 3.19,
             "descuento": 68,
@@ -651,7 +651,7 @@
         {
             "id": "1772530",
             "nombre": "Toy Tactics",
-            "precio_bs": 138,
+            "precio_bs": 136,
             "usd_orig": 24.99,
             "usd_now": 12.49,
             "descuento": 50,
@@ -661,7 +661,7 @@
         {
             "id": "2366970",
             "nombre": "Arco",
-            "precio_bs": 132,
+            "precio_bs": 130,
             "usd_orig": 19.99,
             "usd_now": 11.99,
             "descuento": 40,
@@ -671,7 +671,7 @@
         {
             "id": "2634890",
             "nombre": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-            "precio_bs": 275,
+            "precio_bs": 271,
             "usd_orig": 49.99,
             "usd_now": 24.99,
             "descuento": 50,
@@ -681,7 +681,7 @@
         {
             "id": "2361770",
             "nombre": "SHINOBI: Art of Vengeance",
-            "precio_bs": 231,
+            "precio_bs": 228,
             "usd_orig": 29.99,
             "usd_now": 20.99,
             "descuento": 30,
@@ -691,7 +691,7 @@
         {
             "id": "4780",
             "nombre": "Medieval II: Total War Kingdoms",
-            "precio_bs": 69,
+            "precio_bs": 68,
             "usd_orig": 24.99,
             "usd_now": 6.24,
             "descuento": 75,
@@ -701,7 +701,7 @@
         {
             "id": "220440",
             "nombre": "DMC - Devil May Cry",
-            "precio_bs": 83,
+            "precio_bs": 82,
             "usd_orig": 29.99,
             "usd_now": 7.49,
             "descuento": 75,
@@ -711,7 +711,7 @@
         {
             "id": "44600",
             "nombre": "GTR - FIA GT Racing Game",
-            "precio_bs": 39,
+            "precio_bs": 38,
             "usd_orig": 6.99,
             "usd_now": 3.49,
             "descuento": 50,
@@ -741,7 +741,7 @@
         {
             "id": "762610",
             "nombre": "Russian Subway Dogs",
-            "precio_bs": 50,
+            "precio_bs": 49,
             "usd_orig": 14.99,
             "usd_now": 4.49,
             "descuento": 70,
@@ -751,7 +751,7 @@
         {
             "id": "753640",
             "nombre": "Outer Wilds",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 24.99,
             "usd_now": 14.99,
             "descuento": 40,
@@ -771,7 +771,7 @@
         {
             "id": "2510710",
             "nombre": "Kunitsu-Gami: Path of the Goddess",
-            "precio_bs": 330,
+            "precio_bs": 325,
             "usd_orig": 39.99,
             "usd_now": 29.99,
             "descuento": 25,
@@ -791,7 +791,7 @@
         {
             "id": "3597580",
             "nombre": "Earthion",
-            "precio_bs": 154,
+            "precio_bs": 152,
             "usd_orig": 19.99,
             "usd_now": 13.99,
             "descuento": 30,
@@ -801,7 +801,7 @@
         {
             "id": "55230",
             "nombre": "Saints Row: The Third",
-            "precio_bs": 28,
+            "precio_bs": 27,
             "usd_orig": 9.99,
             "usd_now": 2.49,
             "descuento": 75,
@@ -851,7 +851,7 @@
         {
             "id": "557600",
             "nombre": "Gorogoa",
-            "precio_bs": 42,
+            "precio_bs": 41,
             "usd_orig": 14.99,
             "usd_now": 3.74,
             "descuento": 75,
@@ -861,7 +861,7 @@
         {
             "id": "1091980",
             "nombre": "The Bard's Tale IV: Director's Cut",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 49.99,
             "usd_now": 9.99,
             "descuento": 80,
@@ -871,7 +871,7 @@
         {
             "id": "248721",
             "nombre": "Age of Empires II: Definitive Edition",
-            "precio_bs": 135,
+            "precio_bs": 133,
             "usd_orig": 34.99,
             "usd_now": 12.24,
             "descuento": 65,
@@ -891,7 +891,7 @@
         {
             "id": "1041920",
             "nombre": "If Found...",
-            "precio_bs": 55,
+            "precio_bs": 54,
             "usd_orig": 12.99,
             "usd_now": 4.93,
             "descuento": 62,
@@ -901,7 +901,7 @@
         {
             "id": "1138850",
             "nombre": "Heavenly Bodies",
-            "precio_bs": 94,
+            "precio_bs": 92,
             "usd_orig": 24.99,
             "usd_now": 8.49,
             "descuento": 66,
@@ -911,7 +911,7 @@
         {
             "id": "1996010",
             "nombre": "Crow Country",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 19.99,
             "usd_now": 9.99,
             "descuento": 50,
@@ -921,7 +921,7 @@
         {
             "id": "2544110",
             "nombre": "Broken Sword - Shadow of the Templars: Reforged",
-            "precio_bs": 198,
+            "precio_bs": 195,
             "usd_orig": 29.99,
             "usd_now": 17.99,
             "descuento": 40,
@@ -931,7 +931,7 @@
         {
             "id": "2720950",
             "nombre": "Grunn",
-            "precio_bs": 107,
+            "precio_bs": 106,
             "usd_orig": 12.99,
             "usd_now": 9.74,
             "descuento": 25,
@@ -941,7 +941,7 @@
         {
             "id": "2727210",
             "nombre": "Deathless. The Hero Quest",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 24.99,
             "usd_now": 14.99,
             "descuento": 40,
@@ -961,7 +961,7 @@
         {
             "id": "359630",
             "nombre": "Independence War 2 - Edge of Chaos",
-            "precio_bs": 14,
+            "precio_bs": 13,
             "usd_orig": 5.99,
             "usd_now": 1.19,
             "descuento": 80,
@@ -971,7 +971,7 @@
         {
             "id": "1161580",
             "nombre": "Hardspace: Shipbreaker",
-            "precio_bs": 116,
+            "precio_bs": 114,
             "usd_orig": 34.99,
             "usd_now": 10.49,
             "descuento": 70,
@@ -981,7 +981,7 @@
         {
             "id": "860510",
             "nombre": "Little Nightmares II",
-            "precio_bs": 109,
+            "precio_bs": 108,
             "usd_orig": 29.99,
             "usd_now": 9.89,
             "descuento": 67,
@@ -991,7 +991,7 @@
         {
             "id": "1158850",
             "nombre": "The Great Ace Attorney Chronicles",
-            "precio_bs": 176,
+            "precio_bs": 174,
             "usd_orig": 39.99,
             "usd_now": 15.99,
             "descuento": 60,
@@ -1001,7 +1001,7 @@
         {
             "id": "368260",
             "nombre": "Marvels Midnight Suns",
-            "precio_bs": 176,
+            "precio_bs": 174,
             "usd_orig": 79.99,
             "usd_now": 15.99,
             "descuento": 80,
@@ -1011,7 +1011,7 @@
         {
             "id": "2527500",
             "nombre": "MiSide",
-            "precio_bs": 149,
+            "precio_bs": 147,
             "usd_orig": 14.99,
             "usd_now": 13.49,
             "descuento": 10,
@@ -1021,7 +1021,7 @@
         {
             "id": "2400430",
             "nombre": "Capcom Fighting Collection 2",
-            "precio_bs": 330,
+            "precio_bs": 325,
             "usd_orig": 39.99,
             "usd_now": 29.99,
             "descuento": 25,
@@ -1031,7 +1031,7 @@
         {
             "id": "3014080",
             "nombre": "The Hundred Line -Last Defense Academy-",
-            "precio_bs": 461,
+            "precio_bs": 455,
             "usd_orig": 59.99,
             "usd_now": 41.99,
             "descuento": 30,
@@ -1051,7 +1051,7 @@
         {
             "id": "3070390",
             "nombre": "Master Lemon: The Quest for Iceland",
-            "precio_bs": 116,
+            "precio_bs": 114,
             "usd_orig": 14.99,
             "usd_now": 10.49,
             "descuento": 30,
@@ -1071,7 +1071,7 @@
         {
             "id": "332250",
             "nombre": "The Next Penelope",
-            "precio_bs": 15,
+            "precio_bs": 14,
             "usd_orig": 12.99,
             "usd_now": 1.29,
             "descuento": 90,
@@ -1101,7 +1101,7 @@
         {
             "id": "597170",
             "nombre": "Clone Drone in the Danger Zone",
-            "precio_bs": 77,
+            "precio_bs": 76,
             "usd_orig": 19.99,
             "usd_now": 6.99,
             "descuento": 65,
@@ -1121,7 +1121,7 @@
         {
             "id": "1097840",
             "nombre": "Gears 5",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 29.99,
             "usd_now": 14.99,
             "descuento": 50,
@@ -1131,7 +1131,7 @@
         {
             "id": "1029210",
             "nombre": "30XX",
-            "precio_bs": 99,
+            "precio_bs": 98,
             "usd_orig": 19.99,
             "usd_now": 8.99,
             "descuento": 55,
@@ -1141,7 +1141,7 @@
         {
             "id": "1332010",
             "nombre": "Stray",
-            "precio_bs": 198,
+            "precio_bs": 195,
             "usd_orig": 29.99,
             "usd_now": 17.99,
             "descuento": 40,
@@ -1151,7 +1151,7 @@
         {
             "id": "1182900",
             "nombre": "A Plague Tale: Requiem",
-            "precio_bs": 193,
+            "precio_bs": 190,
             "usd_orig": 49.99,
             "usd_now": 17.49,
             "descuento": 65,
@@ -1161,7 +1161,7 @@
         {
             "id": "1159690",
             "nombre": "Voidtrain",
-            "precio_bs": 182,
+            "precio_bs": 179,
             "usd_orig": 29.99,
             "usd_now": 16.49,
             "descuento": 45,
@@ -1181,7 +1181,7 @@
         {
             "id": "1310330",
             "nombre": "Goodbye Volcano High",
-            "precio_bs": 165,
+            "precio_bs": 163,
             "usd_orig": 29.99,
             "usd_now": 14.99,
             "descuento": 50,
@@ -1211,7 +1211,7 @@
         {
             "id": "2493180",
             "nombre": "The Lullaby of Life",
-            "precio_bs": 42,
+            "precio_bs": 41,
             "usd_orig": 14.99,
             "usd_now": 3.74,
             "descuento": 75,
@@ -1221,7 +1221,7 @@
         {
             "id": "2401970",
             "nombre": "Ace Attorney Investigations Collection",
-            "precio_bs": 220,
+            "precio_bs": 217,
             "usd_orig": 39.99,
             "usd_now": 19.99,
             "descuento": 50,
@@ -1241,7 +1241,7 @@
         {
             "id": "2288350",
             "nombre": "RAIDOU Remastered: The Mystery of the Soulless Army",
-            "precio_bs": 385,
+            "precio_bs": 380,
             "usd_orig": 49.99,
             "usd_now": 34.99,
             "descuento": 30,
@@ -1261,7 +1261,7 @@
         {
             "id": "4230",
             "nombre": "RACE - The WTCC Game",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 39.99,
             "usd_now": 9.99,
             "descuento": 75,
@@ -1271,7 +1271,7 @@
         {
             "id": "367500",
             "nombre": "Dragons Dogma: Dark Arisen",
-            "precio_bs": 53,
+            "precio_bs": 52,
             "usd_orig": 29.99,
             "usd_now": 4.79,
             "descuento": 84,
@@ -1291,7 +1291,7 @@
         {
             "id": "424840",
             "nombre": "Little Nightmares",
-            "precio_bs": 83,
+            "precio_bs": 82,
             "usd_orig": 29.99,
             "usd_now": 7.49,
             "descuento": 75,
@@ -1301,7 +1301,7 @@
         {
             "id": "846470",
             "nombre": "Moss",
-            "precio_bs": 88,
+            "precio_bs": 87,
             "usd_orig": 19.99,
             "usd_now": 7.99,
             "descuento": 60,
@@ -1311,7 +1311,7 @@
         {
             "id": "848350",
             "nombre": "Katamari Damacy REROLL",
-            "precio_bs": 83,
+            "precio_bs": 82,
             "usd_orig": 29.99,
             "usd_now": 7.49,
             "descuento": 75,
@@ -1321,7 +1321,7 @@
         {
             "id": "752590",
             "nombre": "A Plague Tale: Innocence",
-            "precio_bs": 269,
+            "precio_bs": 266,
             "usd_orig": 69.99,
             "usd_now": 24.49,
             "descuento": 65,
@@ -1331,7 +1331,7 @@
         {
             "id": "846870",
             "nombre": "Yooka-Laylee and the Impossible Lair",
-            "precio_bs": 66,
+            "precio_bs": 65,
             "usd_orig": 29.99,
             "usd_now": 5.99,
             "descuento": 80,
@@ -1341,7 +1341,7 @@
         {
             "id": "649950",
             "nombre": "Ashen",
-            "precio_bs": 88,
+            "precio_bs": 87,
             "usd_orig": 39.99,
             "usd_now": 7.99,
             "descuento": 80,
@@ -1351,7 +1351,7 @@
         {
             "id": "27400",
             "nombre": "Dangerous High School Girls in Trouble!",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 19.99,
             "usd_now": 9.99,
             "descuento": 50,
@@ -1361,7 +1361,7 @@
         {
             "id": "1492680",
             "nombre": "The Pathless",
-            "precio_bs": 110,
+            "precio_bs": 109,
             "usd_orig": 39.99,
             "usd_now": 9.99,
             "descuento": 75,
@@ -1384,23 +1384,23 @@
         },
         {
             "monedas": 700,
-            "precio_bs": 80
+            "precio_bs": 79
         },
         {
             "monedas": 1400,
-            "precio_bs": 159
+            "precio_bs": 157
         },
         {
             "monedas": 3500,
-            "precio_bs": 398
+            "precio_bs": 392
         },
         {
             "monedas": 7000,
-            "precio_bs": 795
+            "precio_bs": 784
         },
         {
             "monedas": 17500,
-            "precio_bs": 1986
+            "precio_bs": 1960
         }
     ]
 }
