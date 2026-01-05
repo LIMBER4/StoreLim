@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>STORE LIM</title>
+    <title>StoreLim</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #090909;
             --card: #141414;
-            --accent: #00ff88; /* ESTE ES EL VERDE */
+            --accent: #00ff88; /* VERDE NEON */
             --vip: #ffd700;
             --text: #e0e0e0;
         }
@@ -20,7 +20,6 @@
             padding-bottom: 50px;
         }
 
-        /* BARRA DE MENSAJES */
         .bar {
             background: linear-gradient(90deg, #ff0055, #5500ff);
             text-align: center; padding: 8px; font-weight: bold; font-size: 0.9rem;
@@ -29,15 +28,12 @@
             display: none; 
         }
 
-        /* MATRIX BG */
         canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.15; }
 
-        /* HEADER */
         header { padding: 20px; text-align: center; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #222; }
         .logo { font-size: 2.2rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
         .logo span { color: var(--accent); }
 
-        /* TABS */
         .tabs { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
         .tab {
             padding: 8px 16px; background: #222; color: #888; border-radius: 20px;
@@ -45,10 +41,9 @@
         }
         .tab.active { background: var(--accent); color: black; border-color: var(--accent); box-shadow: 0 0 15px rgba(0,255,136,0.3); }
 
-        /* GRID */
         .container { max-width: 1200px; margin: 0 auto; padding: 15px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
-        .section { display: none; animation: fadeIn 0.5s; }
+        .section { display: none; animation: fadeIn 0.4s; }
         .section.active { display: block; }
         @keyframes fadeIn { from {opacity:0; transform:translateY(10px);} to {opacity:1; transform:translateY(0);} }
 
@@ -57,6 +52,7 @@
             background: var(--card); border: 1px solid #2a2a2a; border-radius: 10px; overflow: hidden;
             position: relative; transition: transform 0.2s;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            will-change: transform; /* OPTIMIZACION DE RENDIMIENTO */
         }
         .card:active { transform: scale(0.98); }
         .card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
@@ -80,17 +76,15 @@
         
         .bs-price { font-size: 1.3rem; font-weight: 800; color: var(--accent); text-shadow: 0 0 10px rgba(0,255,136,0.2); margin-bottom: 10px; }
 
-        /* --- AQUÍ ESTÁ EL CAMBIO DEL BOTÓN VERDE --- */
+        /* BOTON VERDE */
         .btn {
             display: block; width: 100%; padding: 12px 0;
-            background: #00ff88; /* VERDE NEON */
-            color: black;        /* TEXTO NEGRO */
+            background: #00ff88; color: black;
             text-decoration: none; font-weight: 800; font-size: 1rem; border-radius: 6px;
-            box-shadow: 0 0 15px rgba(0, 255, 136, 0.4); /* BRILLO */
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
             text-transform: uppercase;
         }
         .btn:active { transform: scale(0.95); }
-        
         .btn-tk { background: linear-gradient(45deg, #ff0050, #00f2ea); color: white; border: none; }
 
         /* TIKTOK */
@@ -104,6 +98,15 @@
         .trust-box {
             background: rgba(255, 200, 0, 0.05); border: 1px solid rgba(255, 200, 0, 0.2);
             padding: 15px; border-radius: 8px; max-width: 600px; margin: 0 auto 10px auto;
+        }
+        
+        /* ESTILO PARA LOS FILTROS ACTIVOS */
+        .filter-btn {
+            background: #222; border: 1px solid #444; color: #aaa;
+            padding: 8px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; margin: 0 5px;
+        }
+        .filter-btn.active {
+            background: white; color: black; border-color: white;
         }
     </style>
 </head>
@@ -125,9 +128,10 @@
         <div id="steam" class="section active">
             <input type="text" id="search" placeholder="🔍 Buscar juego..." style="width:100%; padding:15px; background:#1a1a1a; border:1px solid #333; color:white; border-radius:8px; margin-bottom:15px; box-sizing:border-box; font-size:1rem;">
             
-            <div style="text-align:center; margin-bottom:15px;">
-                <button class="tab" style="font-size:0.8rem; padding:5px 12px;" onclick="filtrar('todo')">Todos</button>
-                <button class="tab" style="font-size:0.8rem; padding:5px 12px;" onclick="filtrar('vip')">Solo VIPs 👑</button>
+            <div style="text-align:center; margin-bottom:20px;">
+                <button class="filter-btn active" onclick="cargarFiltro('todo', this)">Todos</button>
+                <button class="filter-btn" onclick="cargarFiltro('vip', this)">VIPs 👑</button>
+                <button class="filter-btn" onclick="cargarFiltro('ofertas', this)">Ofertas 🔥</button>
             </div>
 
             <div id="grid-steam" class="grid"></div>
@@ -161,15 +165,18 @@
 
     <script>
         let DATA = {};
-        let JUEGOS = [];
+        let LISTA_ACTUAL = []; // Para saber qué estamos viendo (Todo, VIPs o Ofertas)
         let FAVS = JSON.parse(localStorage.getItem('favs')) || [];
 
         async function init() {
             try {
-                // Truco para evitar Cache
+                // Anti-Cache
                 const r = await fetch('data.json?v=' + new Date().getTime());
                 DATA = await r.json();
-                JUEGOS = DATA.juegos;
+                
+                // UNIR TODO PARA LA VISTA INICIAL
+                const todos = [...DATA.vips, ...DATA.ofertas];
+                LISTA_ACTUAL = todos; // Empezamos viendo todo
                 
                 if(DATA.config.msg) {
                     const bar = document.getElementById('top-msg');
@@ -177,22 +184,42 @@
                     bar.style.display = 'block';
                 }
                 
-                renderJuegos(JUEGOS);
+                renderJuegos(LISTA_ACTUAL);
                 renderTikTok(DATA.tiktok);
                 renderFavs();
                 initMatrix();
                 setupCalc();
             } catch(e) { console.log("Error cargando:", e); }
 
-            document.getElementById('search').addEventListener('keyup', (e)=>{
+            // BUSCADOR OPTIMIZADO (Busca en lo que estás viendo)
+            document.getElementById('search').addEventListener('input', (e)=>{
                 const t = e.target.value.toLowerCase();
-                renderJuegos(JUEGOS.filter(j => j.nombre.toLowerCase().includes(t)));
+                const filtrados = LISTA_ACTUAL.filter(j => j.nombre.toLowerCase().includes(t));
+                renderJuegos(filtrados);
             });
         }
 
+        // FUNCION PARA LOS BOTONES DE FILTRO (VIP, OFERTAS, TODOS)
+        window.cargarFiltro = (tipo, btn) => {
+            // Actualizar estilo botones
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Cambiar datos
+            if(tipo === 'todo') LISTA_ACTUAL = [...DATA.vips, ...DATA.ofertas];
+            if(tipo === 'vip') LISTA_ACTUAL = DATA.vips;
+            if(tipo === 'ofertas') LISTA_ACTUAL = DATA.ofertas;
+            
+            // Renderizar y limpiar buscador
+            document.getElementById('search').value = "";
+            renderJuegos(LISTA_ACTUAL);
+        };
+
         function renderJuegos(lista, containerId = 'grid-steam') {
             const box = document.getElementById(containerId);
-            box.innerHTML = "";
+            
+            // CONSTRUCCION RAPIDA DE HTML (Optimización de velocidad)
+            let htmlBuffer = ""; 
             
             lista.forEach(j => {
                 const isFav = FAVS.includes(j.id);
@@ -214,7 +241,7 @@
 
                 const link = `https://wa.me/${DATA.config.celular}?text=Hola StoreLim, quiero *${j.nombre}*. Precio Web: ${precioBs}`;
 
-                box.innerHTML += `
+                htmlBuffer += `
                     <div class="card">
                         <div class="fav-btn" onclick="toggleFav(${j.id})">${heart}</div>
                         <div class="badges">${vipBadge}${offBadge}</div>
@@ -228,13 +255,16 @@
                     </div>
                 `;
             });
+
+            box.innerHTML = htmlBuffer; // Insertar todo de una sola vez
         }
 
         function renderTikTok(packs) {
             const box = document.getElementById('grid-tk');
+            let htmlBuffer = "";
             packs.forEach(p => {
                 const link = `https://wa.me/${DATA.config.celular}?text=Pack TikTok: *${p.monedas} Monedas* (${p.precio_bs}Bs)`;
-                box.innerHTML += `
+                htmlBuffer += `
                     <div class="card" style="padding:15px; text-align:center;">
                         <div style="font-size:2rem;">🪙</div>
                         <div style="font-size:1.2rem; font-weight:bold; margin-bottom:5px;">${p.monedas}</div>
@@ -243,10 +273,13 @@
                     </div>
                 `;
             });
+            box.innerHTML = htmlBuffer;
         }
 
         function renderFavs() {
-            const misFavs = JUEGOS.filter(j => FAVS.includes(j.id));
+            // Buscar favoritos en VIPs y Ofertas
+            const todos = [...(DATA.vips||[]), ...(DATA.ofertas||[])];
+            const misFavs = todos.filter(j => FAVS.includes(j.id));
             const div = document.getElementById('grid-fav');
             if(misFavs.length === 0) div.innerHTML = "<p style='text-align:center; width:100%; color:#666;'>Toca el corazón 🤍 para guardar.</p>";
             else renderJuegos(misFavs, 'grid-fav');
@@ -256,7 +289,9 @@
             if(FAVS.includes(id)) FAVS = FAVS.filter(i => i !== id);
             else FAVS.push(id);
             localStorage.setItem('favs', JSON.stringify(FAVS));
-            renderJuegos(JUEGOS);
+            
+            // Actualizar vista actual
+            renderJuegos(LISTA_ACTUAL);
             renderFavs();
         };
 
@@ -265,11 +300,6 @@
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.getElementById(id).classList.add('active');
             event.target.classList.add('active');
-        };
-
-        window.filtrar = (tipo) => {
-            if(tipo === 'todo') renderJuegos(JUEGOS);
-            if(tipo === 'vip') renderJuegos(JUEGOS.filter(j => j.es_vip));
         };
 
         function setupCalc() {

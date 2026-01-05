@@ -26,7 +26,7 @@ API_OFERTAS = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=60&
 def limpiar():
     os.system("clear")
     print("=================================")
-    print("   🦁 STORELIM v3.4 - FINAL      ")
+    print("   🦁 STORELIM v3.5 - VELOZ      ")
     print("=================================")
 
 def get_config():
@@ -48,7 +48,7 @@ def procesar_vips_steam(tasa):
     
     for i, app_id in enumerate(VIP_IDS):
         try:
-            time.sleep(0.5) # Pausa anti-bloqueo
+            time.sleep(0.5) 
             url = f"{API_STEAM_DIRECT}{app_id}"
             raw = requests.get(url).json()
             
@@ -60,7 +60,6 @@ def procesar_vips_steam(tasa):
                 usd_orig = 0.0
                 descuento = 0
                 
-                # DETECCIÓN INTELIGENTE DE PRECIOS
                 if 'price_overview' in data:
                     usd_now = data['price_overview']['final'] / 100
                     usd_orig = data['price_overview']['initial'] / 100
@@ -69,10 +68,8 @@ def procesar_vips_steam(tasa):
                     usd_now = 0.0
                     usd_orig = 0.0
                 else:
-                    # Si no tiene precio (ej: no disponible), saltamos
                     continue 
 
-                # Si precio original es 0 (ej: juego gratis), igualamos para evitar errores
                 if usd_orig == 0: usd_orig = usd_now
 
                 lista.append({
@@ -94,7 +91,7 @@ def procesar_vips_steam(tasa):
     return lista
 
 def procesar_ofertas(tasa):
-    print("\n🔥 Buscando Ofertas (Restaurando sección)...")
+    print("\n🔥 Buscando Ofertas...")
     lista = []
     ids_registrados = set()
     
@@ -111,7 +108,6 @@ def procesar_ofertas(tasa):
                 p_orig = float(g['normalPrice'])
                 desc = int(float(g['savings']))
                 
-                # Evitar juegos sin precio
                 if p_orig == 0: p_orig = p_usd
 
                 lista.append({
@@ -144,12 +140,11 @@ def main():
     ofertas = procesar_ofertas(tasa)
     packs = procesar_tiktok(tasa)
     
-    # UNIR TODO (AQUÍ ES DONDE ME ASEGURO QUE LAS OFERTAS ESTÉN)
-    todo_juegos = vips + ofertas
-    
+    # AQUI ESTA LA MAGIA: Guardamos separados
     db = {
         "config": {"tasa": tasa, "celular": MI_CELULAR, "msg": msg, "costo_tk": TIKTOK_COSTO_UNITARIO},
-        "juegos": todo_juegos,
+        "vips": vips,        # <--- CAJÓN 1
+        "ofertas": ofertas,  # <--- CAJÓN 2
         "tiktok": packs
     }
     
@@ -159,10 +154,9 @@ def main():
     print(f"\n✨ REPORTE FINAL ✨")
     print(f"👑 VIPs: {len(vips)}")
     print(f"🔥 Ofertas: {len(ofertas)}")
-    print(f"📂 Total Juegos en Web: {len(todo_juegos)}")
     
     if input("\n¿Subir a GitHub? (s/n): ").lower() == 's':
-        os.system("git add . && git commit -m 'Fix Final' && git push")
+        os.system("git add . && git commit -m 'Sepacion VIPS/Ofertas' && git push")
 
 if __name__ == "__main__":
     main()
