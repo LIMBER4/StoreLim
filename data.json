@@ -1,0 +1,579 @@
+{
+    "config": {
+        "tasa_dolar": 9.98,
+        "celular": "59170000000",
+        "costo_tiktok_unitario": 0.010333333333333333
+    },
+    "tiktok_packs": [
+        {
+            "monedas": 30,
+            "precio_bs": 4
+        },
+        {
+            "monedas": 350,
+            "precio_bs": 40
+        },
+        {
+            "monedas": 700,
+            "precio_bs": 80
+        },
+        {
+            "monedas": 1400,
+            "precio_bs": 159
+        },
+        {
+            "monedas": 3500,
+            "precio_bs": 398
+        },
+        {
+            "monedas": 7000,
+            "precio_bs": 795
+        },
+        {
+            "monedas": 17500,
+            "precio_bs": 1986
+        }
+    ],
+    "steam": [
+        {
+            "id": "954650",
+            "nombre": "Druidstone: The Secret of the Menhir Forest",
+            "precio_orig_usd": 24.99,
+            "precio_final_usd": 3.74,
+            "descuento": 85,
+            "precio_bs": 42,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/954650/header.jpg"
+        },
+        {
+            "id": "632470",
+            "nombre": "Disco Elysium - The Final Cut",
+            "precio_orig_usd": 39.99,
+            "precio_final_usd": 3.99,
+            "descuento": 90,
+            "precio_bs": 44,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/632470/header.jpg"
+        },
+        {
+            "id": "373420",
+            "nombre": "Divinity: Original Sin - Enhanced Edition",
+            "precio_orig_usd": 39.99,
+            "precio_final_usd": 3.99,
+            "descuento": 90,
+            "precio_bs": 44,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/373420/header.jpg"
+        },
+        {
+            "id": "292030",
+            "nombre": "The Witcher 3: Wild Hunt",
+            "precio_orig_usd": 39.99,
+            "precio_final_usd": 3.99,
+            "descuento": 90,
+            "precio_bs": 44,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg"
+        },
+        {
+            "id": "523780",
+            "nombre": "Emily is Away Too",
+            "precio_orig_usd": 4.99,
+            "precio_final_usd": 0.99,
+            "descuento": 80,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/523780/header.jpg"
+        },
+        {
+            "id": "220",
+            "nombre": "Half-Life 2",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 1.99,
+            "descuento": 80,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+        },
+        {
+            "id": "70",
+            "nombre": "Half-Life",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 1.99,
+            "descuento": 80,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg"
+        },
+        {
+            "id": "620",
+            "nombre": "Portal 2",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 1.99,
+            "descuento": 80,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg"
+        },
+        {
+            "id": "646570",
+            "nombre": "Slay the Spire",
+            "precio_orig_usd": 24.99,
+            "precio_final_usd": 2.49,
+            "descuento": 90,
+            "precio_bs": 28,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg"
+        },
+        {
+            "id": "571310",
+            "nombre": "SteamWorld Dig 2",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.19,
+            "descuento": 94,
+            "precio_bs": 14,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/571310/header.jpg"
+        },
+        {
+            "id": "48000",
+            "nombre": "LIMBO",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 0.99,
+            "descuento": 90,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/48000/header.jpg"
+        },
+        {
+            "id": "6850",
+            "nombre": "Hitman 2: Silent Assassin",
+            "precio_orig_usd": 8.99,
+            "precio_final_usd": 0.89,
+            "descuento": 90,
+            "precio_bs": 10,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6850/header.jpg"
+        },
+        {
+            "id": "304430",
+            "nombre": "INSIDE",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.99,
+            "descuento": 90,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/304430/header.jpg"
+        },
+        {
+            "id": "390290",
+            "nombre": "Bulb Boy",
+            "precio_orig_usd": 8.99,
+            "precio_final_usd": 0.89,
+            "descuento": 90,
+            "precio_bs": 10,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/390290/header.jpg"
+        },
+        {
+            "id": "289070",
+            "nombre": "Sid Meiers Civilization VI",
+            "precio_orig_usd": 59.99,
+            "precio_final_usd": 5.99,
+            "descuento": 90,
+            "precio_bs": 66,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg"
+        },
+        {
+            "id": "3900",
+            "nombre": "Sid Meier's Civilization IV",
+            "precio_orig_usd": 29.99,
+            "precio_final_usd": 5.99,
+            "descuento": 80,
+            "precio_bs": 66,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3900/header.jpg"
+        },
+        {
+            "id": "236850",
+            "nombre": "Europa Universalis IV",
+            "precio_orig_usd": 49.99,
+            "precio_final_usd": 4.99,
+            "descuento": 90,
+            "precio_bs": 55,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/236850/header.jpg"
+        },
+        {
+            "id": "241600",
+            "nombre": "Rogue Legacy",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 1.49,
+            "descuento": 90,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/241600/header.jpg"
+        },
+        {
+            "id": "244160",
+            "nombre": "Homeworld Remastered Collection",
+            "precio_orig_usd": 34.99,
+            "precio_final_usd": 3.49,
+            "descuento": 90,
+            "precio_bs": 39,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/244160/header.jpg"
+        },
+        {
+            "id": "396750",
+            "nombre": "Everspace",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 0.99,
+            "descuento": 95,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/396750/header.jpg"
+        },
+        {
+            "id": "57300",
+            "nombre": "Amnesia: The Dark Descent",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.99,
+            "descuento": 90,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/57300/header.jpg"
+        },
+        {
+            "id": "4560",
+            "nombre": "Company of Heroes",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 3.99,
+            "descuento": 80,
+            "precio_bs": 44,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/4560/header.jpg"
+        },
+        {
+            "id": "322190",
+            "nombre": "SteamWorld Heist",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 1.04,
+            "descuento": 93,
+            "precio_bs": 12,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/322190/header.jpg"
+        },
+        {
+            "id": "8190",
+            "nombre": "Just Cause 2",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 1.49,
+            "descuento": 90,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/8190/header.jpg"
+        },
+        {
+            "id": "627270",
+            "nombre": "Injustice 2",
+            "precio_orig_usd": 49.99,
+            "precio_final_usd": 4.99,
+            "descuento": 90,
+            "precio_bs": 55,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/627270/header.jpg"
+        },
+        {
+            "id": "1823930",
+            "nombre": "Wavetale",
+            "precio_orig_usd": 29.99,
+            "precio_final_usd": 1.49,
+            "descuento": 95,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1823930/header.jpg"
+        },
+        {
+            "id": "418240",
+            "nombre": "Shadow Tactics: Blades of the Shogun",
+            "precio_orig_usd": 39.99,
+            "precio_final_usd": 3.99,
+            "descuento": 90,
+            "precio_bs": 44,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/418240/header.jpg"
+        },
+        {
+            "id": "1222690",
+            "nombre": "Dragon Age Inquisition",
+            "precio_orig_usd": 39.99,
+            "precio_final_usd": 3.99,
+            "descuento": 90,
+            "precio_bs": 44,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222690/header.jpg"
+        },
+        {
+            "id": "558420",
+            "nombre": "Stories Untold",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 0.99,
+            "descuento": 90,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/558420/header.jpg"
+        },
+        {
+            "id": "1328670",
+            "nombre": "Mass Effect Legendary Edition",
+            "precio_orig_usd": 59.99,
+            "precio_final_usd": 5.99,
+            "descuento": 90,
+            "precio_bs": 66,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328670/header.jpg"
+        },
+        {
+            "id": "518699",
+            "nombre": "Mortal Kombat 11 Ultimate",
+            "precio_orig_usd": 59.99,
+            "precio_final_usd": 8.99,
+            "descuento": 85,
+            "precio_bs": 99,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/518699/header.jpg"
+        },
+        {
+            "id": "376300",
+            "nombre": "GUILTY GEAR Xrd -SIGN-",
+            "precio_orig_usd": 29.99,
+            "precio_final_usd": 2.99,
+            "descuento": 90,
+            "precio_bs": 33,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/376300/header.jpg"
+        },
+        {
+            "id": "108710",
+            "nombre": "Alan Wake",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 1.49,
+            "descuento": 90,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/108710/header.jpg"
+        },
+        {
+            "id": "20920",
+            "nombre": "The Witcher 2: Assassins of Kings Enhanced Edition",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 2.99,
+            "descuento": 85,
+            "precio_bs": 33,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/20920/header.jpg"
+        },
+        {
+            "id": "274350",
+            "nombre": "Dropsy",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 0.99,
+            "descuento": 90,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/274350/header.jpg"
+        },
+        {
+            "id": "1174180",
+            "nombre": "Red Dead Redemption 2",
+            "precio_orig_usd": 59.99,
+            "precio_final_usd": 14.99,
+            "descuento": 75,
+            "precio_bs": 165,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
+        },
+        {
+            "id": "440550",
+            "nombre": "Atomik: RunGunJumpGun",
+            "precio_orig_usd": 7.99,
+            "precio_final_usd": 0.79,
+            "descuento": 90,
+            "precio_bs": 9,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/440550/header.jpg"
+        },
+        {
+            "id": "39190",
+            "nombre": "Dungeon Siege",
+            "precio_orig_usd": 6.99,
+            "precio_final_usd": 0.97,
+            "descuento": 86,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/39190/header.jpg"
+        },
+        {
+            "id": "6860",
+            "nombre": "Hitman: Blood Money",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 0.99,
+            "descuento": 90,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/6860/header.jpg"
+        },
+        {
+            "id": "3830",
+            "nombre": "Psychonauts",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 1.49,
+            "descuento": 85,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3830/header.jpg"
+        },
+        {
+            "id": "304390",
+            "nombre": "For Honor",
+            "precio_orig_usd": 29.99,
+            "precio_final_usd": 1.49,
+            "descuento": 95,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/304390/header.jpg"
+        },
+        {
+            "id": "231160",
+            "nombre": "The Swapper",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 2.24,
+            "descuento": 85,
+            "precio_bs": 25,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/231160/header.jpg"
+        },
+        {
+            "id": "3010",
+            "nombre": "Xpand Rally",
+            "precio_orig_usd": 4.99,
+            "precio_final_usd": 0.54,
+            "descuento": 89,
+            "precio_bs": 6,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3010/header.jpg"
+        },
+        {
+            "id": "1213210",
+            "nombre": "Command and Conquer Remastered Collection",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.99,
+            "descuento": 90,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1213210/header.jpg"
+        },
+        {
+            "id": "201420",
+            "nombre": "Toki Tori 2",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 0.89,
+            "descuento": 94,
+            "precio_bs": 10,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/201420/header.jpg"
+        },
+        {
+            "id": "405640",
+            "nombre": "Pony Island",
+            "precio_orig_usd": 4.99,
+            "precio_final_usd": 0.74,
+            "descuento": 85,
+            "precio_bs": 9,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/405640/header.jpg"
+        },
+        {
+            "id": "416680",
+            "nombre": "Zombie Night Terror",
+            "precio_orig_usd": 12.99,
+            "precio_final_usd": 1.29,
+            "descuento": 90,
+            "precio_bs": 15,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/416680/header.jpg"
+        },
+        {
+            "id": "20900",
+            "nombre": "The Witcher: Enhanced Edition Director's Cut",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 1.49,
+            "descuento": 85,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/20900/header.jpg"
+        },
+        {
+            "id": "23490",
+            "nombre": "Tropico 3",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.99,
+            "descuento": 90,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/23490/header.jpg"
+        },
+        {
+            "id": "1872680",
+            "nombre": "The Knight Witch",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.99,
+            "descuento": 90,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1872680/header.jpg"
+        },
+        {
+            "id": "552500",
+            "nombre": "Warhammer: Vermintide 2",
+            "precio_orig_usd": 29.99,
+            "precio_final_usd": 2.99,
+            "descuento": 90,
+            "precio_bs": 33,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg"
+        },
+        {
+            "id": "448510",
+            "nombre": "Overcooked",
+            "precio_orig_usd": 16.99,
+            "precio_final_usd": 1.69,
+            "descuento": 90,
+            "precio_bs": 19,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/448510/header.jpg"
+        },
+        {
+            "id": "416600",
+            "nombre": "Full Metal Furies",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 2.99,
+            "descuento": 85,
+            "precio_bs": 33,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/416600/header.jpg"
+        },
+        {
+            "id": "400",
+            "nombre": "Portal",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 1.99,
+            "descuento": 80,
+            "precio_bs": 22,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/400/header.jpg"
+        },
+        {
+            "id": "617480",
+            "nombre": "Tower of Time",
+            "precio_orig_usd": 24.99,
+            "precio_final_usd": 1.74,
+            "descuento": 93,
+            "precio_bs": 20,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/617480/header.jpg"
+        },
+        {
+            "id": "454410",
+            "nombre": "GIGA WRECKER",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.19,
+            "descuento": 94,
+            "precio_bs": 14,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/454410/header.jpg"
+        },
+        {
+            "id": "626660",
+            "nombre": "Flipping Death",
+            "precio_orig_usd": 19.99,
+            "precio_final_usd": 1.19,
+            "descuento": 94,
+            "precio_bs": 14,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/626660/header.jpg"
+        },
+        {
+            "id": "1525660",
+            "nombre": "Sunblaze",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 1.49,
+            "descuento": 90,
+            "precio_bs": 17,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1525660/header.jpg"
+        },
+        {
+            "id": "232430",
+            "nombre": "Gone Home",
+            "precio_orig_usd": 14.99,
+            "precio_final_usd": 2.24,
+            "descuento": 85,
+            "precio_bs": 25,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/232430/header.jpg"
+        },
+        {
+            "id": "431250",
+            "nombre": "Mushroom Wars",
+            "precio_orig_usd": 9.99,
+            "precio_final_usd": 0.99,
+            "descuento": 90,
+            "precio_bs": 11,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/431250/header.jpg"
+        }
+    ]
+}
