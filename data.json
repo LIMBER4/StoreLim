@@ -1,8 +1,8 @@
 {
     "config": {
-        "tasa": 9.85,
+        "tasa": 9.86,
         "celular": "59174355273",
-        "msg": "CUALQUIER CONSULTA POR OTRO JUEGO PREGUNTA AL WHATSAPP",
+        "msg": "HOLAAAAAAA",
         "costo_tk": 0.010333333333333333
     },
     "vips": [
@@ -39,7 +39,7 @@
         {
             "id": 1174180,
             "nombre": "Red Dead Redemption 2",
-            "precio_bs": 650,
+            "precio_bs": 651,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -59,7 +59,7 @@
         {
             "id": 1245620,
             "nombre": "ELDEN RING",
-            "precio_bs": 650,
+            "precio_bs": 651,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -69,7 +69,7 @@
         {
             "id": 1593500,
             "nombre": "God of War",
-            "precio_bs": 542,
+            "precio_bs": 543,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -79,7 +79,7 @@
         {
             "id": 1817070,
             "nombre": "Marvel\u2019s Spider-Man Remastered",
-            "precio_bs": 650,
+            "precio_bs": 651,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -99,7 +99,7 @@
         {
             "id": 1091500,
             "nombre": "Cyberpunk 2077",
-            "precio_bs": 650,
+            "precio_bs": 651,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -129,7 +129,7 @@
         {
             "id": 221100,
             "nombre": "DayZ",
-            "precio_bs": 542,
+            "precio_bs": 543,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -289,7 +289,7 @@
         {
             "id": 1238810,
             "nombre": "Battlefield\u2122 V",
-            "precio_bs": 542,
+            "precio_bs": 543,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -309,7 +309,7 @@
         {
             "id": 1623730,
             "nombre": "Palworld",
-            "precio_bs": 325,
+            "precio_bs": 326,
             "usd_orig": 29.99,
             "usd_now": 29.99,
             "descuento": 0,
@@ -329,7 +329,7 @@
         {
             "id": 1326470,
             "nombre": "Sons Of The Forest",
-            "precio_bs": 325,
+            "precio_bs": 326,
             "usd_orig": 29.99,
             "usd_now": 29.99,
             "descuento": 0,
@@ -339,7 +339,7 @@
         {
             "id": 552520,
             "nombre": "Far Cry\u00ae 5",
-            "precio_bs": 650,
+            "precio_bs": 651,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -349,7 +349,7 @@
         {
             "id": 1551360,
             "nombre": "Forza Horizon 5",
-            "precio_bs": 650,
+            "precio_bs": 651,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -381,7 +381,7 @@
         {
             "id": "1687950",
             "nombre": "Persona 5 Royal",
-            "precio_bs": 195,
+            "precio_bs": 196,
             "usd_orig": 59.99,
             "usd_now": 17.99,
             "descuento": 70,
@@ -431,7 +431,7 @@
         {
             "id": "1875830",
             "nombre": "Shin Megami Tensei V: Vengeance",
-            "precio_bs": 260,
+            "precio_bs": 261,
             "usd_orig": 59.99,
             "usd_now": 23.99,
             "descuento": 60,
@@ -506,6 +506,16 @@
             "usd_now": 44.99,
             "descuento": 25,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3375780/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "519860",
+            "nombre": "DUSK",
+            "precio_bs": 204,
+            "usd_orig": 29.98,
+            "usd_now": 18.73,
+            "descuento": 37,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/519860/header.jpg",
             "es_vip": false
         },
         {
@@ -619,6 +629,16 @@
             "es_vip": false
         },
         {
+            "id": "1291340",
+            "nombre": "Townscaper",
+            "precio_bs": 30,
+            "usd_orig": 5.99,
+            "usd_now": 2.69,
+            "descuento": 55,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1291340/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1772530",
             "nombre": "Toy Tactics",
             "precio_bs": 136,
@@ -631,7 +651,7 @@
         {
             "id": "2366970",
             "nombre": "Arco",
-            "precio_bs": 130,
+            "precio_bs": 131,
             "usd_orig": 19.99,
             "usd_now": 11.99,
             "descuento": 40,
@@ -641,7 +661,7 @@
         {
             "id": "2634890",
             "nombre": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-            "precio_bs": 271,
+            "precio_bs": 272,
             "usd_orig": 49.99,
             "usd_now": 24.99,
             "descuento": 50,
@@ -711,7 +731,7 @@
         {
             "id": "2510710",
             "nombre": "Kunitsu-Gami: Path of the Goddess",
-            "precio_bs": 325,
+            "precio_bs": 326,
             "usd_orig": 39.99,
             "usd_now": 29.99,
             "descuento": 25,
@@ -741,7 +761,7 @@
         {
             "id": "55230",
             "nombre": "Saints Row: The Third",
-            "precio_bs": 27,
+            "precio_bs": 28,
             "usd_orig": 9.99,
             "usd_now": 2.49,
             "descuento": 75,
@@ -831,7 +851,7 @@
         {
             "id": "1138850",
             "nombre": "Heavenly Bodies",
-            "precio_bs": 92,
+            "precio_bs": 93,
             "usd_orig": 24.99,
             "usd_now": 8.49,
             "descuento": 66,
@@ -851,7 +871,7 @@
         {
             "id": "2544110",
             "nombre": "Broken Sword - Shadow of the Templars: Reforged",
-            "precio_bs": 195,
+            "precio_bs": 196,
             "usd_orig": 29.99,
             "usd_now": 17.99,
             "descuento": 40,
@@ -876,6 +896,16 @@
             "usd_now": 14.99,
             "descuento": 40,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2727210/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "692850",
+            "nombre": "Bloodstained: Ritual of the Night",
+            "precio_bs": 427,
+            "usd_orig": 49.48,
+            "usd_now": 39.36,
+            "descuento": 20,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/692850/header.jpg",
             "es_vip": false
         },
         {
@@ -919,6 +949,26 @@
             "es_vip": false
         },
         {
+            "id": "1321440",
+            "nombre": "Cassette Beasts",
+            "precio_bs": 98,
+            "usd_orig": 19.99,
+            "usd_now": 8.99,
+            "descuento": 55,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1321440/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1808680",
+            "nombre": "Snufkin: Melody of Moominvalley",
+            "precio_bs": 131,
+            "usd_orig": 19.99,
+            "usd_now": 11.99,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1808680/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "2527500",
             "nombre": "MiSide",
             "precio_bs": 147,
@@ -931,7 +981,7 @@
         {
             "id": "2400430",
             "nombre": "Capcom Fighting Collection 2",
-            "precio_bs": 325,
+            "precio_bs": 326,
             "usd_orig": 39.99,
             "usd_now": 29.99,
             "descuento": 25,
@@ -941,11 +991,21 @@
         {
             "id": "3014080",
             "nombre": "The Hundred Line -Last Defense Academy-",
-            "precio_bs": 455,
+            "precio_bs": 456,
             "usd_orig": 59.99,
             "usd_now": 41.99,
             "descuento": 30,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3014080/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "3117820",
+            "nombre": "Sultans Game",
+            "precio_bs": 217,
+            "usd_orig": 24.99,
+            "usd_now": 19.99,
+            "descuento": 20,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3117820/header.jpg",
             "es_vip": false
         },
         {
@@ -1021,7 +1081,7 @@
         {
             "id": "1332010",
             "nombre": "Stray",
-            "precio_bs": 195,
+            "precio_bs": 196,
             "usd_orig": 29.99,
             "usd_now": 17.99,
             "descuento": 40,
@@ -1056,6 +1116,16 @@
             "usd_now": 4.99,
             "descuento": 80,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1903620/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1641700",
+            "nombre": "Moving Out 2",
+            "precio_bs": 318,
+            "usd_orig": 49.48,
+            "usd_now": 29.23,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/header.jpg",
             "es_vip": false
         },
         {
@@ -1109,6 +1179,16 @@
             "es_vip": false
         },
         {
+            "id": "3506430",
+            "nombre": "PEAK",
+            "precio_bs": 54,
+            "usd_orig": 7.99,
+            "usd_now": 4.95,
+            "descuento": 38,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3506430/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "317850",
             "nombre": "Company of Heroes 2: Ardennes Assault",
             "precio_bs": 55,
@@ -1159,6 +1239,16 @@
             "es_vip": false
         },
         {
+            "id": "728880",
+            "nombre": "Overcooked! 2",
+            "precio_bs": 261,
+            "usd_orig": 37.78,
+            "usd_now": 24.01,
+            "descuento": 36,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "848350",
             "nombre": "Katamari Damacy REROLL",
             "precio_bs": 82,
@@ -1171,10 +1261,10 @@
         {
             "id": "752590",
             "nombre": "A Plague Tale: Innocence",
-            "precio_bs": 266,
-            "usd_orig": 69.99,
-            "usd_now": 24.49,
-            "descuento": 65,
+            "precio_bs": 87,
+            "usd_orig": 39.99,
+            "usd_now": 7.99,
+            "descuento": 80,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/752590/header.jpg",
             "es_vip": false
         },
@@ -1199,6 +1289,16 @@
             "es_vip": false
         },
         {
+            "id": "437570",
+            "nombre": "GoNNER",
+            "precio_bs": 22,
+            "usd_orig": 9.99,
+            "usd_now": 1.99,
+            "descuento": 80,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/437570/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1492680",
             "nombre": "The Pathless",
             "precio_bs": 109,
@@ -1211,7 +1311,7 @@
         {
             "id": "1284190",
             "nombre": "The Planet Crafter",
-            "precio_bs": 130,
+            "precio_bs": 131,
             "usd_orig": 23.99,
             "usd_now": 11.99,
             "descuento": 50,
@@ -1231,7 +1331,7 @@
         {
             "id": "1677280",
             "nombre": "Company of Heroes 3",
-            "precio_bs": 260,
+            "precio_bs": 261,
             "usd_orig": 59.99,
             "usd_now": 23.99,
             "descuento": 60,
@@ -1251,7 +1351,7 @@
         {
             "id": "2297010",
             "nombre": "Combat Mission Battle for Normandy",
-            "precio_bs": 260,
+            "precio_bs": 261,
             "usd_orig": 59.99,
             "usd_now": 23.99,
             "descuento": 60,
@@ -1266,106 +1366,6 @@
             "usd_now": 7.49,
             "descuento": 50,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1608640/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2666510",
-            "nombre": "Rustys Retirement",
-            "precio_bs": 51,
-            "usd_orig": 6.99,
-            "usd_now": 4.68,
-            "descuento": 33,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2666510/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1781010",
-            "nombre": "Pine Hearts",
-            "precio_bs": 92,
-            "usd_orig": 12.99,
-            "usd_now": 8.44,
-            "descuento": 35,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1781010/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "397540",
-            "nombre": "Borderlands 3",
-            "precio_bs": 174,
-            "usd_orig": 79.99,
-            "usd_now": 15.99,
-            "descuento": 80,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "3059520",
-            "nombre": "F1 25",
-            "precio_bs": 325,
-            "usd_orig": 59.99,
-            "usd_now": 29.99,
-            "descuento": 50,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3059520/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2313700",
-            "nombre": "Constance",
-            "precio_bs": 174,
-            "usd_orig": 19.99,
-            "usd_now": 15.99,
-            "descuento": 20,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2313700/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "38700",
-            "nombre": "Toki Tori",
-            "precio_bs": 8,
-            "usd_orig": 4.99,
-            "usd_now": 0.69,
-            "descuento": 86,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/38700/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "229480",
-            "nombre": "Dungeons and Dragons: Chronicles of Mystara",
-            "precio_bs": 54,
-            "usd_orig": 14.99,
-            "usd_now": 4.94,
-            "descuento": 67,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/229480/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "250320",
-            "nombre": "The Wolf Among Us",
-            "precio_bs": 82,
-            "usd_orig": 14.99,
-            "usd_now": 7.49,
-            "descuento": 50,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/250320/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "267980",
-            "nombre": "Hostile Waters: Antaeus Rising",
-            "precio_bs": 9,
-            "usd_orig": 2.99,
-            "usd_now": 0.74,
-            "descuento": 75,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/267980/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "250700",
-            "nombre": "Super Time Force Ultra",
-            "precio_bs": 41,
-            "usd_orig": 14.99,
-            "usd_now": 3.74,
-            "descuento": 75,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/250700/header.jpg",
             "es_vip": false
         }
     ],
@@ -1392,15 +1392,15 @@
         },
         {
             "monedas": 3500,
-            "precio_bs": 392
+            "precio_bs": 393
         },
         {
             "monedas": 7000,
-            "precio_bs": 784
+            "precio_bs": 785
         },
         {
             "monedas": 17500,
-            "precio_bs": 1960
+            "precio_bs": 1962
         }
     ]
 }
