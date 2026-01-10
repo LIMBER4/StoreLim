@@ -1,8 +1,8 @@
 {
     "config": {
-        "tasa": 9.86,
+        "tasa": 9.91,
         "celular": "59174355273",
-        "msg": "HOLAAAAAAA",
+        "msg": "BUEN DIAAAAAAA",
         "costo_tk": 0.010333333333333333
     },
     "vips": [
@@ -29,7 +29,7 @@
         {
             "id": 252490,
             "nombre": "Rust",
-            "precio_bs": 434,
+            "precio_bs": 436,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -39,7 +39,7 @@
         {
             "id": 1174180,
             "nombre": "Red Dead Redemption 2",
-            "precio_bs": 651,
+            "precio_bs": 654,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -59,7 +59,7 @@
         {
             "id": 1245620,
             "nombre": "ELDEN RING",
-            "precio_bs": 651,
+            "precio_bs": 654,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -69,7 +69,7 @@
         {
             "id": 1593500,
             "nombre": "God of War",
-            "precio_bs": 543,
+            "precio_bs": 545,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -79,7 +79,7 @@
         {
             "id": 1817070,
             "nombre": "Marvel\u2019s Spider-Man Remastered",
-            "precio_bs": 651,
+            "precio_bs": 654,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -89,7 +89,7 @@
         {
             "id": 292030,
             "nombre": "The Witcher 3: Wild Hunt",
-            "precio_bs": 434,
+            "precio_bs": 436,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -99,7 +99,7 @@
         {
             "id": 1091500,
             "nombre": "Cyberpunk 2077",
-            "precio_bs": 651,
+            "precio_bs": 654,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -129,7 +129,7 @@
         {
             "id": 221100,
             "nombre": "DayZ",
-            "precio_bs": 543,
+            "precio_bs": 545,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -139,7 +139,7 @@
         {
             "id": 250900,
             "nombre": "The Binding of Isaac: Rebirth",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 14.99,
             "usd_now": 14.99,
             "descuento": 0,
@@ -149,7 +149,7 @@
         {
             "id": 268910,
             "nombre": "Cuphead",
-            "precio_bs": 217,
+            "precio_bs": 218,
             "usd_orig": 19.99,
             "usd_now": 19.99,
             "descuento": 0,
@@ -159,7 +159,7 @@
         {
             "id": 413150,
             "nombre": "Stardew Valley",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 14.99,
             "usd_now": 14.99,
             "descuento": 0,
@@ -179,7 +179,7 @@
         {
             "id": 892970,
             "nombre": "Valheim",
-            "precio_bs": 217,
+            "precio_bs": 218,
             "usd_orig": 19.99,
             "usd_now": 19.99,
             "descuento": 0,
@@ -209,7 +209,7 @@
         {
             "id": 381210,
             "nombre": "Dead by Daylight",
-            "precio_bs": 217,
+            "precio_bs": 218,
             "usd_orig": 19.99,
             "usd_now": 19.99,
             "descuento": 0,
@@ -229,7 +229,7 @@
         {
             "id": 2050650,
             "nombre": "Resident Evil 4",
-            "precio_bs": 434,
+            "precio_bs": 436,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -259,7 +259,7 @@
         {
             "id": 2399830,
             "nombre": "ARK: Survival Ascended",
-            "precio_bs": 244,
+            "precio_bs": 246,
             "usd_orig": 44.99,
             "usd_now": 22.49,
             "descuento": 50,
@@ -279,7 +279,7 @@
         {
             "id": 1238840,
             "nombre": "Battlefield\u2122 1",
-            "precio_bs": 434,
+            "precio_bs": 436,
             "usd_orig": 39.99,
             "usd_now": 39.99,
             "descuento": 0,
@@ -289,7 +289,7 @@
         {
             "id": 1238810,
             "nombre": "Battlefield\u2122 V",
-            "precio_bs": 543,
+            "precio_bs": 545,
             "usd_orig": 49.99,
             "usd_now": 49.99,
             "descuento": 0,
@@ -299,7 +299,7 @@
         {
             "id": 1196590,
             "nombre": "Resident Evil Village",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 49.99,
             "usd_now": 14.99,
             "descuento": 70,
@@ -309,7 +309,7 @@
         {
             "id": 1623730,
             "nombre": "Palworld",
-            "precio_bs": 326,
+            "precio_bs": 327,
             "usd_orig": 29.99,
             "usd_now": 29.99,
             "descuento": 0,
@@ -319,7 +319,7 @@
         {
             "id": 1604030,
             "nombre": "V Rising",
-            "precio_bs": 380,
+            "precio_bs": 382,
             "usd_orig": 34.99,
             "usd_now": 34.99,
             "descuento": 0,
@@ -329,7 +329,7 @@
         {
             "id": 1326470,
             "nombre": "Sons Of The Forest",
-            "precio_bs": 326,
+            "precio_bs": 327,
             "usd_orig": 29.99,
             "usd_now": 29.99,
             "descuento": 0,
@@ -339,7 +339,7 @@
         {
             "id": 552520,
             "nombre": "Far Cry\u00ae 5",
-            "precio_bs": 651,
+            "precio_bs": 654,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -349,7 +349,7 @@
         {
             "id": 1551360,
             "nombre": "Forza Horizon 5",
-            "precio_bs": 651,
+            "precio_bs": 654,
             "usd_orig": 59.99,
             "usd_now": 59.99,
             "descuento": 0,
@@ -381,7 +381,7 @@
         {
             "id": "1687950",
             "nombre": "Persona 5 Royal",
-            "precio_bs": 196,
+            "precio_bs": 197,
             "usd_orig": 59.99,
             "usd_now": 17.99,
             "descuento": 70,
@@ -411,11 +411,31 @@
         {
             "id": "2679460",
             "nombre": "Metaphor: ReFantazio",
-            "precio_bs": 380,
+            "precio_bs": 382,
             "usd_orig": 69.99,
             "usd_now": 34.99,
             "descuento": 50,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2679460/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1336490",
+            "nombre": "Against the Storm",
+            "precio_bs": 98,
+            "usd_orig": 29.99,
+            "usd_now": 8.99,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1336490/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1293170",
+            "nombre": "Bzzzt",
+            "precio_bs": 40,
+            "usd_orig": 11.99,
+            "usd_now": 3.59,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1293170/header.jpg",
             "es_vip": false
         },
         {
@@ -431,11 +451,21 @@
         {
             "id": "1875830",
             "nombre": "Shin Megami Tensei V: Vengeance",
-            "precio_bs": 261,
+            "precio_bs": 262,
             "usd_orig": 59.99,
             "usd_now": 23.99,
             "descuento": 60,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1875830/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "813230",
+            "nombre": "ANIMAL WELL",
+            "precio_bs": 191,
+            "usd_orig": 24.99,
+            "usd_now": 17.49,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/813230/header.jpg",
             "es_vip": false
         },
         {
@@ -461,7 +491,7 @@
         {
             "id": "883710",
             "nombre": "Resident Evil 2",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 59.99,
             "usd_now": 14.99,
             "descuento": 75,
@@ -491,7 +521,7 @@
         {
             "id": "1426210",
             "nombre": "It Takes Two",
-            "precio_bs": 87,
+            "precio_bs": 88,
             "usd_orig": 39.99,
             "usd_now": 7.99,
             "descuento": 80,
@@ -499,19 +529,29 @@
             "es_vip": false
         },
         {
-            "id": "3375780",
-            "nombre": "Trails in the Sky 1st Chapter",
-            "precio_bs": 488,
-            "usd_orig": 59.99,
-            "usd_now": 44.99,
-            "descuento": 25,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3375780/header.jpg",
+            "id": "2366980",
+            "nombre": "Thank Goodness Youre Here!",
+            "precio_bs": 131,
+            "usd_orig": 19.99,
+            "usd_now": 11.99,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2366980/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "214770",
+            "nombre": "Guacamelee! Gold Edition",
+            "precio_bs": 41,
+            "usd_orig": 14.99,
+            "usd_now": 3.74,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/214770/header.jpg",
             "es_vip": false
         },
         {
             "id": "519860",
             "nombre": "DUSK",
-            "precio_bs": 204,
+            "precio_bs": 205,
             "usd_orig": 29.98,
             "usd_now": 18.73,
             "descuento": 37,
@@ -529,9 +569,19 @@
             "es_vip": false
         },
         {
+            "id": "2084000",
+            "nombre": "Shogun Showdown",
+            "precio_bs": 82,
+            "usd_orig": 14.99,
+            "usd_now": 7.49,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2084000/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "2111190",
             "nombre": "MULLET MADJACK",
-            "precio_bs": 152,
+            "precio_bs": 153,
             "usd_orig": 19.99,
             "usd_now": 13.99,
             "descuento": 30,
@@ -541,7 +591,7 @@
         {
             "id": "2008920",
             "nombre": "Lorelei and the Laser Eyes",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 24.99,
             "usd_now": 14.99,
             "descuento": 40,
@@ -551,7 +601,7 @@
         {
             "id": "2054970",
             "nombre": "Dragons Dogma 2",
-            "precio_bs": 319,
+            "precio_bs": 321,
             "usd_orig": 69.99,
             "usd_now": 29.39,
             "descuento": 58,
@@ -611,11 +661,21 @@
         {
             "id": "1127500",
             "nombre": "Mini Motorways",
-            "precio_bs": 87,
+            "precio_bs": 88,
             "usd_orig": 9.99,
             "usd_now": 7.99,
             "descuento": 20,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1127500/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1887400",
+            "nombre": "ANTONBLAST",
+            "precio_bs": 153,
+            "usd_orig": 19.99,
+            "usd_now": 13.99,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1887400/header.jpg",
             "es_vip": false
         },
         {
@@ -639,13 +699,33 @@
             "es_vip": false
         },
         {
+            "id": "1364100",
+            "nombre": "Lacuna  A Sci-Fi Noir Adventure",
+            "precio_bs": 27,
+            "usd_orig": 15.99,
+            "usd_now": 2.39,
+            "descuento": 85,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1364100/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1772530",
             "nombre": "Toy Tactics",
-            "precio_bs": 136,
+            "precio_bs": 137,
             "usd_orig": 24.99,
             "usd_now": 12.49,
             "descuento": 50,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1772530/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1931770",
+            "nombre": "Chants of Sennaar",
+            "precio_bs": 131,
+            "usd_orig": 19.99,
+            "usd_now": 11.99,
+            "descuento": 40,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931770/header.jpg",
             "es_vip": false
         },
         {
@@ -661,7 +741,7 @@
         {
             "id": "2634890",
             "nombre": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-            "precio_bs": 272,
+            "precio_bs": 273,
             "usd_orig": 49.99,
             "usd_now": 24.99,
             "descuento": 50,
@@ -671,7 +751,7 @@
         {
             "id": "2361770",
             "nombre": "SHINOBI: Art of Vengeance",
-            "precio_bs": 228,
+            "precio_bs": 229,
             "usd_orig": 29.99,
             "usd_now": 20.99,
             "descuento": 30,
@@ -686,6 +766,16 @@
             "usd_now": 7.49,
             "descuento": 75,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/220440/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "528720",
+            "nombre": "Shu",
+            "precio_bs": 10,
+            "usd_orig": 9.99,
+            "usd_now": 0.89,
+            "descuento": 91,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/528720/header.jpg",
             "es_vip": false
         },
         {
@@ -711,7 +801,7 @@
         {
             "id": "753640",
             "nombre": "Outer Wilds",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 24.99,
             "usd_now": 14.99,
             "descuento": 40,
@@ -729,9 +819,29 @@
             "es_vip": false
         },
         {
+            "id": "1545560",
+            "nombre": "Shadow Gambit: The Cursed Crew",
+            "precio_bs": 109,
+            "usd_orig": 39.99,
+            "usd_now": 9.99,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1545560/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1898500",
+            "nombre": "Worldless",
+            "precio_bs": 88,
+            "usd_orig": 19.99,
+            "usd_now": 7.99,
+            "descuento": 60,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1898500/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "2510710",
             "nombre": "Kunitsu-Gami: Path of the Goddess",
-            "precio_bs": 326,
+            "precio_bs": 327,
             "usd_orig": 39.99,
             "usd_now": 29.99,
             "descuento": 25,
@@ -749,9 +859,19 @@
             "es_vip": false
         },
         {
+            "id": "2097570",
+            "nombre": "StarVaders",
+            "precio_bs": 205,
+            "usd_orig": 24.99,
+            "usd_now": 18.74,
+            "descuento": 25,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2097570/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "3597580",
             "nombre": "Earthion",
-            "precio_bs": 152,
+            "precio_bs": 153,
             "usd_orig": 19.99,
             "usd_now": 13.99,
             "descuento": 30,
@@ -821,7 +941,7 @@
         {
             "id": "248721",
             "nombre": "Age of Empires II: Definitive Edition",
-            "precio_bs": 133,
+            "precio_bs": 134,
             "usd_orig": 34.99,
             "usd_now": 12.24,
             "descuento": 65,
@@ -849,6 +969,16 @@
             "es_vip": false
         },
         {
+            "id": "795420",
+            "nombre": "The Darkside Detective: A Fumble in the Dark",
+            "precio_bs": 162,
+            "usd_orig": 26.33,
+            "usd_now": 14.77,
+            "descuento": 43,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/795420/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1138850",
             "nombre": "Heavenly Bodies",
             "precio_bs": 93,
@@ -871,7 +1001,7 @@
         {
             "id": "2544110",
             "nombre": "Broken Sword - Shadow of the Templars: Reforged",
-            "precio_bs": 196,
+            "precio_bs": 197,
             "usd_orig": 29.99,
             "usd_now": 17.99,
             "descuento": 40,
@@ -881,7 +1011,7 @@
         {
             "id": "2720950",
             "nombre": "Grunn",
-            "precio_bs": 106,
+            "precio_bs": 107,
             "usd_orig": 12.99,
             "usd_now": 9.74,
             "descuento": 25,
@@ -891,7 +1021,7 @@
         {
             "id": "2727210",
             "nombre": "Deathless. The Hero Quest",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 24.99,
             "usd_now": 14.99,
             "descuento": 40,
@@ -899,9 +1029,19 @@
             "es_vip": false
         },
         {
+            "id": "552590",
+            "nombre": "The Sexy Brutale",
+            "precio_bs": 66,
+            "usd_orig": 19.99,
+            "usd_now": 5.99,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/552590/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "692850",
             "nombre": "Bloodstained: Ritual of the Night",
-            "precio_bs": 427,
+            "precio_bs": 430,
             "usd_orig": 49.48,
             "usd_now": 39.36,
             "descuento": 20,
@@ -911,7 +1051,7 @@
         {
             "id": "1161580",
             "nombre": "Hardspace: Shipbreaker",
-            "precio_bs": 114,
+            "precio_bs": 115,
             "usd_orig": 34.99,
             "usd_now": 10.49,
             "descuento": 70,
@@ -931,7 +1071,7 @@
         {
             "id": "1158850",
             "nombre": "The Great Ace Attorney Chronicles",
-            "precio_bs": 174,
+            "precio_bs": 175,
             "usd_orig": 39.99,
             "usd_now": 15.99,
             "descuento": 60,
@@ -941,11 +1081,21 @@
         {
             "id": "368260",
             "nombre": "Marvels Midnight Suns",
-            "precio_bs": 174,
+            "precio_bs": 175,
             "usd_orig": 79.99,
             "usd_now": 15.99,
             "descuento": 80,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/368260/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1155970",
+            "nombre": "Roadwarden",
+            "precio_bs": 30,
+            "usd_orig": 10.99,
+            "usd_now": 2.74,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1155970/header.jpg",
             "es_vip": false
         },
         {
@@ -959,6 +1109,16 @@
             "es_vip": false
         },
         {
+            "id": "1796220",
+            "nombre": "Laika: Aged Through Blood",
+            "precio_bs": 66,
+            "usd_orig": 19.99,
+            "usd_now": 5.99,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1796220/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1808680",
             "nombre": "Snufkin: Melody of Moominvalley",
             "precio_bs": 131,
@@ -969,9 +1129,29 @@
             "es_vip": false
         },
         {
+            "id": "1561340",
+            "nombre": "Berserk Boy",
+            "precio_bs": 110,
+            "usd_orig": 20.0,
+            "usd_now": 10.0,
+            "descuento": 50,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1561340/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "832500",
+            "nombre": "3 Minutes to Midnight - A Comedy Graphic Adventure",
+            "precio_bs": 191,
+            "usd_orig": 24.99,
+            "usd_now": 17.49,
+            "descuento": 30,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/832500/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "2527500",
             "nombre": "MiSide",
-            "precio_bs": 147,
+            "precio_bs": 148,
             "usd_orig": 14.99,
             "usd_now": 13.49,
             "descuento": 10,
@@ -981,7 +1161,7 @@
         {
             "id": "2400430",
             "nombre": "Capcom Fighting Collection 2",
-            "precio_bs": 326,
+            "precio_bs": 327,
             "usd_orig": 39.99,
             "usd_now": 29.99,
             "descuento": 25,
@@ -991,7 +1171,7 @@
         {
             "id": "3014080",
             "nombre": "The Hundred Line -Last Defense Academy-",
-            "precio_bs": 456,
+            "precio_bs": 458,
             "usd_orig": 59.99,
             "usd_now": 41.99,
             "descuento": 30,
@@ -1001,7 +1181,7 @@
         {
             "id": "3117820",
             "nombre": "Sultans Game",
-            "precio_bs": 217,
+            "precio_bs": 218,
             "usd_orig": 24.99,
             "usd_now": 19.99,
             "descuento": 20,
@@ -1021,7 +1201,7 @@
         {
             "id": "3070390",
             "nombre": "Master Lemon: The Quest for Iceland",
-            "precio_bs": 114,
+            "precio_bs": 115,
             "usd_orig": 14.99,
             "usd_now": 10.49,
             "descuento": 30,
@@ -1041,7 +1221,7 @@
         {
             "id": "597170",
             "nombre": "Clone Drone in the Danger Zone",
-            "precio_bs": 76,
+            "precio_bs": 77,
             "usd_orig": 19.99,
             "usd_now": 6.99,
             "descuento": 65,
@@ -1059,13 +1239,33 @@
             "es_vip": false
         },
         {
+            "id": "449610",
+            "nombre": "Monster Boy and the Cursed Kingdom",
+            "precio_bs": 82,
+            "usd_orig": 29.99,
+            "usd_now": 7.49,
+            "descuento": 75,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/449610/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1097840",
             "nombre": "Gears 5",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 29.99,
             "usd_now": 14.99,
             "descuento": 50,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1097840/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1084640",
+            "nombre": "Chicken Police - Paint it RED",
+            "precio_bs": 208,
+            "usd_orig": 30.58,
+            "usd_now": 19.02,
+            "descuento": 37,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1084640/header.jpg",
             "es_vip": false
         },
         {
@@ -1079,9 +1279,29 @@
             "es_vip": false
         },
         {
+            "id": "1272160",
+            "nombre": "The Life and Suffering of Sir Brante",
+            "precio_bs": 211,
+            "usd_orig": 26.33,
+            "usd_now": 19.32,
+            "descuento": 26,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1272160/header.jpg",
+            "es_vip": false
+        },
+        {
+            "id": "1656780",
+            "nombre": "Heros Hour",
+            "precio_bs": 79,
+            "usd_orig": 17.99,
+            "usd_now": 7.19,
+            "descuento": 60,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1656780/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1332010",
             "nombre": "Stray",
-            "precio_bs": 196,
+            "precio_bs": 197,
             "usd_orig": 29.99,
             "usd_now": 17.99,
             "descuento": 40,
@@ -1091,7 +1311,7 @@
         {
             "id": "1182900",
             "nombre": "A Plague Tale: Requiem",
-            "precio_bs": 190,
+            "precio_bs": 191,
             "usd_orig": 49.99,
             "usd_now": 17.49,
             "descuento": 65,
@@ -1099,9 +1319,19 @@
             "es_vip": false
         },
         {
+            "id": "1328840",
+            "nombre": "Lost in Play",
+            "precio_bs": 66,
+            "usd_orig": 19.99,
+            "usd_now": 5.99,
+            "descuento": 70,
+            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328840/header.jpg",
+            "es_vip": false
+        },
+        {
             "id": "1159690",
             "nombre": "Voidtrain",
-            "precio_bs": 179,
+            "precio_bs": 180,
             "usd_orig": 29.99,
             "usd_now": 16.49,
             "descuento": 45,
@@ -1121,7 +1351,7 @@
         {
             "id": "1641700",
             "nombre": "Moving Out 2",
-            "precio_bs": 318,
+            "precio_bs": 319,
             "usd_orig": 49.48,
             "usd_now": 29.23,
             "descuento": 40,
@@ -1131,241 +1361,11 @@
         {
             "id": "1310330",
             "nombre": "Goodbye Volcano High",
-            "precio_bs": 163,
+            "precio_bs": 164,
             "usd_orig": 29.99,
             "usd_now": 14.99,
             "descuento": 50,
             "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1310330/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2296990",
-            "nombre": "We Were Here Expeditions: The FriendShip",
-            "precio_bs": 22,
-            "usd_orig": 3.99,
-            "usd_now": 1.99,
-            "descuento": 50,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2296990/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2401970",
-            "nombre": "Ace Attorney Investigations Collection",
-            "precio_bs": 217,
-            "usd_orig": 39.99,
-            "usd_now": 19.99,
-            "descuento": 50,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2401970/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2922410",
-            "nombre": "Achilles: Survivor",
-            "precio_bs": 50,
-            "usd_orig": 6.99,
-            "usd_now": 4.54,
-            "descuento": 35,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2922410/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2288350",
-            "nombre": "RAIDOU Remastered: The Mystery of the Soulless Army",
-            "precio_bs": 380,
-            "usd_orig": 49.99,
-            "usd_now": 34.99,
-            "descuento": 30,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2288350/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "3506430",
-            "nombre": "PEAK",
-            "precio_bs": 54,
-            "usd_orig": 7.99,
-            "usd_now": 4.95,
-            "descuento": 38,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/3506430/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "317850",
-            "nombre": "Company of Heroes 2: Ardennes Assault",
-            "precio_bs": 55,
-            "usd_orig": 19.99,
-            "usd_now": 4.99,
-            "descuento": 75,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/317850/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "367500",
-            "nombre": "Dragons Dogma: Dark Arisen",
-            "precio_bs": 52,
-            "usd_orig": 29.99,
-            "usd_now": 4.79,
-            "descuento": 84,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/367500/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "448510",
-            "nombre": "Overcooked",
-            "precio_bs": 19,
-            "usd_orig": 16.99,
-            "usd_now": 1.69,
-            "descuento": 90,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/448510/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "424840",
-            "nombre": "Little Nightmares",
-            "precio_bs": 82,
-            "usd_orig": 29.99,
-            "usd_now": 7.49,
-            "descuento": 75,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/424840/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "846470",
-            "nombre": "Moss",
-            "precio_bs": 87,
-            "usd_orig": 19.99,
-            "usd_now": 7.99,
-            "descuento": 60,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/846470/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "728880",
-            "nombre": "Overcooked! 2",
-            "precio_bs": 261,
-            "usd_orig": 37.78,
-            "usd_now": 24.01,
-            "descuento": 36,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "848350",
-            "nombre": "Katamari Damacy REROLL",
-            "precio_bs": 82,
-            "usd_orig": 29.99,
-            "usd_now": 7.49,
-            "descuento": 75,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/848350/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "752590",
-            "nombre": "A Plague Tale: Innocence",
-            "precio_bs": 87,
-            "usd_orig": 39.99,
-            "usd_now": 7.99,
-            "descuento": 80,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/752590/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "846870",
-            "nombre": "Yooka-Laylee and the Impossible Lair",
-            "precio_bs": 65,
-            "usd_orig": 29.99,
-            "usd_now": 5.99,
-            "descuento": 80,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/846870/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "649950",
-            "nombre": "Ashen",
-            "precio_bs": 87,
-            "usd_orig": 39.99,
-            "usd_now": 7.99,
-            "descuento": 80,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/649950/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "437570",
-            "nombre": "GoNNER",
-            "precio_bs": 22,
-            "usd_orig": 9.99,
-            "usd_now": 1.99,
-            "descuento": 80,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/437570/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1492680",
-            "nombre": "The Pathless",
-            "precio_bs": 109,
-            "usd_orig": 39.99,
-            "usd_now": 9.99,
-            "descuento": 75,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1492680/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1284190",
-            "nombre": "The Planet Crafter",
-            "precio_bs": 131,
-            "usd_orig": 23.99,
-            "usd_now": 11.99,
-            "descuento": 50,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1284190/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1488200",
-            "nombre": "Symphony of War: The Nephilim Saga",
-            "precio_bs": 76,
-            "usd_orig": 19.99,
-            "usd_now": 6.99,
-            "descuento": 65,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1488200/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1677280",
-            "nombre": "Company of Heroes 3",
-            "precio_bs": 261,
-            "usd_orig": 59.99,
-            "usd_now": 23.99,
-            "descuento": 60,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1677280/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1809700",
-            "nombre": "Persona 3 Portable",
-            "precio_bs": 174,
-            "usd_orig": 19.99,
-            "usd_now": 15.99,
-            "descuento": 20,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1809700/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "2297010",
-            "nombre": "Combat Mission Battle for Normandy",
-            "precio_bs": 261,
-            "usd_orig": 59.99,
-            "usd_now": 23.99,
-            "descuento": 60,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/2297010/header.jpg",
-            "es_vip": false
-        },
-        {
-            "id": "1608640",
-            "nombre": "OTXO",
-            "precio_bs": 82,
-            "usd_orig": 14.99,
-            "usd_now": 7.49,
-            "descuento": 50,
-            "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/1608640/header.jpg",
             "es_vip": false
         }
     ],
@@ -1388,19 +1388,19 @@
         },
         {
             "monedas": 1400,
-            "precio_bs": 157
+            "precio_bs": 158
         },
         {
             "monedas": 3500,
-            "precio_bs": 393
+            "precio_bs": 395
         },
         {
             "monedas": 7000,
-            "precio_bs": 785
+            "precio_bs": 789
         },
         {
             "monedas": 17500,
-            "precio_bs": 1962
+            "precio_bs": 1972
         }
     ]
 }
